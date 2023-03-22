@@ -17,4 +17,5 @@ document.getElementById("a").textContent = answers[0];
 document.getElementById("b").textContent = answers[1];
 document.getElementById("c").textContent = answers[2];
 document.getElementById("d").textContent = answers[3];
+document.getElementById("correct-answer").textContent = answers[answers[4]];
 }
