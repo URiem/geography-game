@@ -1,108 +1,497 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Creative Spaces
+(Developer: Ulrike Riemenschneider)
 
-Welcome URiem,
+![Mockup image](documentation/iamresponsive.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Live webpage](https://uriem.github.io/art-school/index.html)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Table of Content
 
-## Gitpod Reminders
+1. [Introduction](#introduction)
+2. [Project Goals](#project-goals)
+    1. [User Goals](#user-goals)
+    2. [Site Owner Goals](#site-owner-goals)
+3. [User Experience](#user-experience)
+    1. [Strategy](#strategy)
+        * [Target Audience](#target-audience)
+        * [User Requirements & Expectations](#user-requirements-and-expectations)
+        * [User Stories](#user-stories)
+    2. [Scope](#scope)
+        * [Initial Stage](#intial-stage)
+        * [Future Additions](#future-additions)
+    3. [Structure](#structure)
+        * [Wireframes](#wireframes)
+    4. [Skeleton](#skeleton)
+        * [Header](#header)
+        * [Footer](#footer)
+        * [Services offered](#services-offered)
+        * [Calls to action](#call-to-action)
+        * [About page](#about-page)
+        * [Contact page](#contact-page)
+        * [Gallery and Images](#gallery-page-and-images)
+        * [Future Additions](#future-additions)
+    5. [Surface](#surface)
+        * [Color Scheme](#color-scheme)
+        * [Font](#font)
+4. [Technologies Used](#technologies-used)
+    1. [Language](#languages)
+    2. [Frameworks & Tools](#frameworks--tools)
+5. [Testing and Validation](#testing-and-validation)
+    1. [HTML](#html-validation)
+    2. [CSS](#css-validation)
+    3. [Accessibility & Performance](#accessibility--performance)
+    4. [Browser Compatability](#browser-compatability)
+    5. [Testing User Stories](#testing-user-stories)
+6. [Bugs & Fixes](#bugs--fixes)
+7. [Deployment & Development](#deployment--development)
+8. [Credits](#credits)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## Introduction
 
-A blue button should appear to click: _Make Public_,
+Creative Spaces is an art space and school in the Ratzeburg, Germany, area offering classes for children ages 4 - 14. The site is targeted towards parents who are looking for their children to expand and develop their creative abilities. The space offers special events as well such as birthday parties and summer camps.
 
-Another blue button should appear to click: _Open Browser_.
+## Project Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### User Goals
+- Find an open, inviting and versitile art space for children in Ratzeburg, Germany.
+- Find guided art classes for children.
+- Find an open art exploration space for children.
+- Become part of a community of like-minded children and parents of artistially inclined children.
 
-A blue button should appear to click: _Make Public_,
+### Site Owner Goals
+- Attract parents and their children to the creative space.
+- Increase numbers of students participating in the space.
+- Promote art as an invaluable developmental tool for children.
+- Teach and promote artistic skills.
+- Fascilitate a space for social interactions and bonding.
 
-Another blue button should appear to click: _Open Browser_.
+## User Experience
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Strategy
 
-To log into the Heroku toolbelt CLI:
+#### Target Audience
+- Parents looking to enroll their children in art classes.
+- Parents looking to find an artistic outlet for their children.
+- School age children looking for a creative space to expand their artistic skills.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### User Requirements and Expectations
+- Simple and intuitive navigation system.
+- Find relevant information easily and quickly.
+- Links work as expected.
+- Easy was to contact the business.
+- Visually appealing responsive design.
+- Accessibility.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### User Stories
 
-------
+##### First-time User
+As a first time user, I want to ...
+1. ... know what services are offered at Creative Spaces.
+2. ... know times, locations, and types of classes offered.
+3. ... know how to get in contact with the business and request more information.
+4. ... find more information about the staff mentoring and supervising the children.
+5. ... get a feel for what to expect from the classes and fascilities.
 
-## Release History
+##### Returning Users
+As a returning user, I want to ...
+1. ... see the times and types of classes offered.
+2. ... see if there are any new classes offered.
+3. ... find social media links to connect with the business.
+4. ... find directions to the location of the business.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+##### Site owner
+As the site owner, I want users to ...
+1. ... interact with the space, learn about the space, learn about the services offered, learn about the benefits of the service, and request more information.
+2. ... feel comfortable and at ease reaching out for more information.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Scope
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+#### Intial Stage
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+At the initial stage the site will include the basic relevant information. It will include information on the art school and it's motivating principles. It will include a list of classes offered. It will communicate to the user the experience and trustworthyness of the staff running the space. It will make contacting the school easy and promote an approachabe image. The site will include a picture gallery full of impressions of the space and it's operations.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+#### Future Additions
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+In future expansion the site could include a more detailed area for news and special events, such as summer camps, and art exhibits, and a pricing structure of the services offered. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Structure
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#### Wireframes
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The structure of the initial site will include four pages:
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+1. **Home Page** with navigation features in a header and footer, a section on the motivations and philosphy of the space, a section on the classes offered and information on location.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Home](documentation/home-top.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Home](documentation/home-middle.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Home](documentation/home-bottom.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+2. **About Page** with information on the staff and more details about the classes/spaces they fascilitate. This page will include the same header and footer as the main page.
 
-------
+![About](documentation/about.png)
 
-## FAQ about the uptime script
+3. **Contact Page** with a detailed form that includes name and email fields, as well as details on the users interest in the space and the age of the child who is considering use of the space. There will be a field for a text message as well.
 
-**Why have you added this script?**
+![Contact](documentation/signup.png)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+4. **Gallery Page** with a wealth of images that will give a feel and impression of art produced by staff and students at the space.
 
-**How will this affect me?**
+![Gallery](documentation/gallery.png)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+5. **404 Page** - a simple 404 Error page is also included.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Skeleton
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+As described in the previous section with the aid of wireframes, the website includes four pages, which all have a consistent header and footer. The home page includes several calls to action, which link to the about page and the contact page. The gallery has an interactive caption feature. Here are more details of the various page features:
 
-**So….?**
+#### Header
+<details>
+<summary>Screenshot of header on desktop</summary>
+<img src="documentation/header.png" width="700">
+</details>
+<details>
+<summary>Screenshot of header on mobile</summary>
+<img src="documentation/mobileheader.png" width="400">
+</details>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- Featured on all four main pages (and the 404 page).
+- Includes the company name/logo and a menu with links to the Homepage, About page, Gallery page and Contact page.
+- The header is fully responsive and changes to fill two lines on smaller screens.
+- If a user hovers over a menu option in desktop mode an animated bar shows them which option they are choosing. 
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+#### Footer
+<details>
+<summary>Screenshot of Footer</summary>
+<img src="documentation/footer.png" width="500">
+</details>
+<details>
+<summary>Screenshot of footer on mobile</summary>
+<img src="documentation/mobilefooter.png" width="400">
+</details>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- Featured on all four main pages (and the 404 page).
+- Includes the address/location of the space.
+- Includes links to the social media pages which the company maintains: Facebook, Twitter, Instragram, and YouTube.
+- All links open in a new window.
+- The footer is fully responsive and changes to fill two lines on smaller screens. 
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+#### Services offered
+<details>
+<summary>Screenshot of Services offered</summary>
+<img src="documentation/servicesofferedsection.png" width="700">
+</details>
 
-Happy coding!
+- Four panels detail the services/classes offered at the art school.
+- Age groups and class times are specified.
+- A call to action for more information is included in each panel.
+
+
+#### Call to action
+<details>
+<summary>Screenshot of calls to action</summary>
+<img src="documentation/calltoactionbutton.png" width="700">
+</details>
+
+- A call to action features immediately below the hero image. It links to the services offered section.
+- The call to action buttons in the panels for the classes offered link to About page and specifically the teacher running that class.
+- The call to action button in the special events panel links to the Contact page.
+
+
+#### About page
+<details>
+<summary>Screenshot of About page</summary>
+<img src="documentation/aboutpage.png" width="700">
+</details>
+
+- Features four images with information on each member of staff with a short biography and information on the class.
+
+
+#### Contact page
+<details>
+<summary>Screenshot of Conact page top</summary>
+<img src="documentation/contactformtop.png" width="500">
+</details>
+<details>
+<summary>Screenshot of Conact page bottom</summary>
+<img src="documentation/contactformbottom.png" width="500">
+</details>
+
+- Features a detailed form that a customer can submit to express specific interest and request more information.
+
+
+#### Gallery page and Images
+<details>
+<summary>Screenshot of Gallery page</summary>
+<img src="documentation/gallerypage.png" width="700">
+</details>
+
+- Features images of artwork created by the four members of staff listed on the About page. 
+- On a desktop, if the user hovers over the image a superimposed caption appears on each image.
+- On a mobile device the caption will appear if the user taps on the image.
+
+#### Future Additions
+
+A feature to be implemented in the future is a map with the location of the school at the bottom of the home page.
+
+### Surface
+
+The surface design of the website is aimed to convey an artistic flair, while remaining uncluttered, and maintaining easy of readability. The color schemes and font were chosen accordingly.
+
+#### Color Scheme
+
+The color scheme is a balance of vibrant colors that draw attention and convey artistic energy. A vibrant purple color was chosen in conjunction with the hero image and a desire for them to blend together. It was used to frame all important information on the site and all clickable buttons are styled with this color. The remaining features on the site and font are a balance of a dark grey or black, as well as white or off white in order to maintain contrast and readability.
+
+![Color Scheme](documentation/colorscheme.png)
+
+#### Font
+
+Kalam is the font used for high level heading such as the business name, text in the main body of the site and lowerlevel headings use Shantell Sans font. These fonts were chosen for the artistic character and to convey the fluency and flexibility of artistic experimentation.
+
+## Technologies Used
+
+### Languages
+- HTML
+- CSS
+
+### Frameworks & Tools
+- Git
+- GitHub
+- Gitpod
+- Balsamiq
+- Google Fonts
+- Font Awesome
+- ColorSpace
+- Favicon.io
+- W3 Schools
+
+## Testing and Validation
+
+### HTML Validation
+
+The W3C Markup Validation Service was used to validate the HTML of the website. All pages passed with no errors or warnings.
+
+<details>
+<summary>Home</summary>
+<img src="documentation/indexhtmlval.png" width="700">
+</details>
+
+<details>
+<summary>About</summary>
+<img src="documentation/abouthtmlval.png" width="700">
+</details>
+
+<details>
+<summary>Gallery</summary>
+<img src="documentation/galleryhtmlval.png" width="700">
+</details>
+
+<details>
+<summary>Contact</summary>
+<img src="documentation/signuphtmlval.png" width="700">
+</details>
+
+### CSS Validation
+
+The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. The code passed with no errors or warnings.
+
+<details>
+<summary>CSS Validation Screenshot</summary>
+<img src="documentation/cssvalidation.png" width="700">
+</details>
+
+### Accessibility & Performance
+
+The Lighthouse feature on Google Devtools was used to assess accessibility and performance. All pages score high on accessibility. The gallery page scores lowest on performance due to the large number of images.
+
+<details>
+<summary>Home</summary>
+<img src="documentation/indexlh.png" width="700">
+</details>
+
+<details>
+<summary>About</summary>
+<img src="documentation/aboutlh.png" width="700">
+</details>
+
+<details>
+<summary>Gallery</summary>
+<img src="documentation/gallerylh.png" width="700">
+</details>
+
+<details>
+<summary>Contact</summary>
+<img src="documentation/signuplh.png" width="700">
+</details>
+
+#### Outstanding Issues
+
+During testing using Lighthouse issues related to performance and SEO were flaged, specifically on the Home page and Gallery page. Work to reduce these issues should continue. This will further improve the user experience.
+
+
+### Browser Compatability
+
+The websites compatability was tested on the following browsers:
+
+* Google Chrome
+* Mozilla Waterfox
+* Microsoft Edge
+* Safari
+
+### Testing User Stories
+
+1. As a first time user, I want to know what services are offered at Creative Spaces.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Home page | Navigate to the type of art activities you are interested in | Locating information on activities offered | Works as expected |
+
+
+2. As a first time user, I want to know times, location, and types of classes offered.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Home page | Navigate to the type of art activities you are interested in | See classes and times offered | Works as expected |
+| Footer - address | Scroll down to the footer of the page | Find the address of the school | Works as expected |
+
+3. As a first time user, I want to know how to get in contact with the business and request more information.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
+| Footer-social media links  | On any page scroll down to the footer | Contact via any social media platform | Works as expected | 
+
+
+4. As a first time user, I want to find more information about the staff mentoring and supervising the children.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| About page | Navigate to the about page | Find information on the staff and their classes | Works as expected |
+
+5. As a first time user, I want to get a feel for what to expect from the classes and fascilities.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| About page | Navigate to the about page | Find information on the staff and their classes | Works as expected |
+| Gallery page | Navigate to the gallery page | Find samples of work produced by teachers and students | Works as expected |
+
+
+6. As a returning user, I want to see the times and types of classes offered.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Home page | Navigate to the type of art activities you are interested in | Locating information on activities offered | Works as expected |
+
+7. As a returning user, I want to see if there is any new classes offered.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form for more information | Works as expected |
+| Footer-social media links  | On any page scroll down to the footer | See if new classes are advertised on social media | Works as expected | 
+
+8. As a returning user, I want to find social media links to connect with the business.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Footer-social media links  | On any page scroll down to the footer | Find social media links | Works as expected | 
+
+9. As a returning user, I want to find directions to the location of the business.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Footer - address  | On any page scroll down to the footer | Find address of the school | Works as expected | 
+
+
+10. As the site owner, I want users to interact with the space, learn about the space, learn about the services offered, learn about the benefits of the service, and sign up for more information.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Home page | Navigate to the type of art activities and philosophy section | Find information on activities offered and business motivation | Works as expected |
+| Footer-social media links  | On any page scroll down to the footer | Contact via any social media platform | Works as expected | 
+| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
+| About page | Navigate to the about page and read about staff backgrounds and classes they offer | Read the page | Works as expected |
+
+
+
+11. As the site owner, I want users to feel comfortable and at ease reaching out for more information.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Footer-social media links  | On any page scroll down to the footer | Contact via any social media platform | Works as expected | 
+| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
+
+
+#### Room for improvement on User Stories
+
+While all the minimum criteria for fullfilling the user stories are met, there are several items that could be improved upon:
+
+1. A map could be included at the bottom of the home page to give more explicit directions to the location. This would strengthen user story number 9.
+
+2. A  more explicit section or link could be provided on new services, news, or special events. This would stengthen user story number 7.
+
+3. More information about the fascilities could be included, in the form of text about or images of the building, rooms, art supplies and materials provided at the space. This would strengthen user story number 5. 
+
+
+## Bugs & Fixes
+
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| Images framed in the philosophy section failed to be responsive at very small screen sizes. | Max-width of image was set to 90% and margins to % values also for more responsiveness |
+| Header styling failed on small screen sizes | Font size of logo and menu was decreased and menu floated left to fit header on two lines |
+| Spurious tiny underscore lines appeared between the social media links when using 'display: inline' for the CSS styling of the .social-networks class. | Using 'display: flex' eliminated the lines. | 
+
+## Deployment & Development
+
+The website was deployed using GitHub Pages by following these steps:
+
+1. In the GitHub respository navigate to the Settings tab.
+2. Select Pages from the menu on the left-hand side of the page.
+3. For the source select Branch: 'main' and then select: 'save'.
+4. After the webpage refreshes automatically a ribbon at the top will displays the following message: "Your site is live at https://uriem.github.io/art-school/"
+
+The website repository can be forked by the following steps:
+
+1. Go to the GitHub repository.
+2. Click on the Fork button in the upper right hand corner.
+
+The repository can be cloned by the following steps:
+
+1. Got to the GitHub repository.
+2. Locade the Code button above the list of files and click on it.
+3. Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard.
+4. Open Git Bash.
+5. Change the current working directory to the one where you want the cloned directory.
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7. Press Enter to create your local clone.
+
+## Credits
+
+### Media
+
+Images not referenced below are owned by the developer.
+
+Images:
+* Hero image by <a href="https://unsplash.com/@dragos126">Dragos Gontariu</a> on <a href="https://unsplash.com/photos/54VAb3f1z6w">Unsplash</a>
+* 
+
+### Code
+
+Resources:
+
+- Movie Quotes Quiz by Jose Maciel https://zemaciel.github.io/project-02/index.html
+- Mike Dane on YouTube https://www.youtube.com/watch?v=LQGTb112N_c
+- Code by Marek https://www.codehim.com/vanilla-javascript/javascript-multiple-choice-questions-code/
+
+
+### Acknowledgements
+
+I would like to thank:
+- My mentor Brian O'Hare for his feedback, advice, guidance and support.
+- Cohort fascilitator Paul Thomas O'Rirodan, for his general advice on the management of the course and pointing us to a plethora of resources to help with the projects.
+- My husband, Matt, for his encouragement and support along the way.
