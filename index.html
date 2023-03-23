@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3e15c9c764.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Geography Quiz</title>
     <link rel="icon" type="image/x-icon" href="assets/images/ask-question.png">
 </head>
 <body>
     <h1>Geography Quiz</h1>
+    <h2>Test your geographic knowledge!</h2>
 
     <div class="quiz-area">
-        <div>Test your geographic knowledge!</div>
-
+        
         <div id="question-area">Question: <span id="question-text"></span></div>
 
         <div id="answers-area">
@@ -24,14 +25,26 @@
                 <li id="d"></li>
             </ul>
         </div>
-
+        
         <div>The correct answer is: <span id="correct-answer"></span></div>
 
+    </div>
 
+    <div id="score-area">
+        <span id="correct-counter"><i class="fa-solid fa-x"></i>: 0</span>
+        <span id="wrong-counter"><i class="fa-solid fa-check"></i>: 0</span>
     </div>
 
     <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
     
+    <footer>
+        <a href="https://github.com/URiem" target="_blank" rel="noopener" aria-label="Github page of developer (opens in new tab).">
+            <i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ulrike-r-8b538385/" target="_blank" rel="noopener" aria-label="LinkedIn page of developer (opens in new tab).">
+            <i class="fa-brands fa-linkedin-in"></i></a>
+    </footer>
+
 </body>
+
 </html>
