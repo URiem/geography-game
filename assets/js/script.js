@@ -1,60 +1,68 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
+// document.addEventListener("DOMContentLoaded", function() {
+//     runGame();
+// })
 
+console.log(allQuestions);
+
+for (let currentQuestion of allQuestions) {
+   
+    console.log(currentQuestion);
+    displayQuestion(currentQuestion);
+    getUserAnswer(currentQuestion);
+    
+}
+
+function displayQuestion(gameQuestion) {
+    document.getElementById("question-text").textContent = gameQuestion.question;
+    document.getElementById("a").textContent = gameQuestion.answers[0];
+    document.getElementById("b").textContent = gameQuestion.answers[1];
+    document.getElementById("c").textContent = gameQuestion.answers[2];
+    document.getElementById("d").textContent = gameQuestion.answers[3];
+    document.getElementById("correct-answer").textContent = gameQuestion.correctAns;
+}
+
+function getUserAnswer() {
+
+    let buttons = document.getElementsByTagName("button");
+    let userAnswer; 
     for (let button of buttons) {
         button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "answer1") {
-                alert("You have chosen answer 1!")
-            } else if (this.getAttribute("data-type") === "answer2") {
-                alert("You have chosen answer 2!")
-            } else if (this.getAttribute("data-type") === "answer3") {
-                alert("You have chosen anser 3!")
-            } else if (this.getAttribute("data-type") === "answer4") {
-                alert("You have chosen answer 4!")
+            if (this.getAttribute("id") === "a") {
+                userAnswer = 0;
+            } else if (this.getAttribute("id") === "b") {
+                userAnswer = 1;
+            } else if (this.getAttribute("id") === "c") {
+                userAnswer = 2;
+            } else if (this.getAttribute("id") === "d") {
+                userAnswer = 3;
             } else {
                 alert("You have chosen and invalid answer!")
             }
+               
+            if (userAnswer == document.getElementById("correct-answer").textContent) {
+                alert("Yay! You picked the right answer!")
+                incrementScore();
+            } else {
+                alert("Sorry, you picked the wrong answer!")
+                incrementWrongAnswer();
+            }
         })
-
     }
-
-})
-
-let curr = 0;
-
-let numOfQs = allQuestions.length;
-console.log(numOfQs);
-
-for (i = 0; i < numOfQs; i++) {
-    curr = i;
-    currentQuestion = allQuestions[i];
-    document.getElementById("question-text").textContent = currentQuestion.question;
-    document.getElementById("a").textContent = currentQuestion.answers[0];
-    document.getElementById("b").textContent = currentQuestion.answers[1];
-    document.getElementById("c").textContent = currentQuestion.answers[2];
-    document.getElementById("d").textContent = currentQuestion.answers[3];
-    document.getElementById("correct-answer").textContent = currentQuestion.correctAns;
 }
 
-// function runGame {
+function incrementScore() {
 
-// }
+    let oldscore = parseInt(document.getElementById("correct-counter").innerText);
+    document.getElementById("correct-counter").innerText = ++oldscore;
 
-// function checkAnswer {
+}
 
-// }
+function incrementWrongAnswer() {
 
-// function incrementScore {
+    let oldscore = parseInt(document.getElementById("wrong-counter").innerText);
+    document.getElementById("wrong-counter").innerText = ++oldscore;
 
-// }
-
-// function incrementWrongAnswer {
-
-// }
-
-// function displayQuestion {
-
-// }
+}
