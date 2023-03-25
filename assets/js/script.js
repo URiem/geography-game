@@ -5,7 +5,13 @@
 //     runGame();
 // })
 
-console.log(allQuestions);
+// console.log(allQuestions);
+
+let totalQuizQuestions = allQuestions.length;
+let quizQuestionNumber = 0;
+
+document.getElementById("current-question").textContent = quizQuestionNumber + 1;
+document.getElementById("total-questions").textContent = totalQuizQuestions;
 
 for (let currentQuestion of allQuestions) {
    
@@ -21,10 +27,9 @@ function displayQuestion(gameQuestion) {
     document.getElementById("b").textContent = gameQuestion.answers[1];
     document.getElementById("c").textContent = gameQuestion.answers[2];
     document.getElementById("d").textContent = gameQuestion.answers[3];
-    document.getElementById("correct-answer").textContent = gameQuestion.correctAns;
 }
 
-function getUserAnswer() {
+function getUserAnswer(gameQuestion) {
 
     let buttons = document.getElementsByTagName("button");
     let userAnswer; 
@@ -42,15 +47,19 @@ function getUserAnswer() {
                 alert("You have chosen and invalid answer!")
             }
                
-            if (userAnswer == document.getElementById("correct-answer").textContent) {
-                alert("Yay! You picked the right answer!")
+            if (userAnswer == gameQuestion.correctAns) {
+                // alert("Yay! You picked the right answer!")
                 incrementScore();
             } else {
-                alert("Sorry, you picked the wrong answer!")
+                // alert("Sorry, you picked the wrong answer!")
                 incrementWrongAnswer();
             }
         })
     }
+
+    incrementQuestionCounter();
+    console.log(quizQuestionNumber);
+
 }
 
 function incrementScore() {
@@ -64,5 +73,13 @@ function incrementWrongAnswer() {
 
     let oldscore = parseInt(document.getElementById("wrong-counter").innerText);
     document.getElementById("wrong-counter").innerText = ++oldscore;
+
+}
+
+function incrementQuestionCounter() {
+
+    let quizQuestionNumber = parseInt(document.getElementById("current-question").innerText);
+    quizQuestionNumber = quizQuestionNumber + 1;
+    return quizQuestionNumber;
 
 }
