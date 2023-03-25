@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 alert("You have chosen and invalid answer!")
             }
-
         })
 
     }
