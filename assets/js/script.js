@@ -13,3 +13,23 @@ for (i = 0; i < numOfQs; i++) {
     document.getElementById("d").textContent = currentQuestion.answers[3];
     document.getElementById("correct-answer").textContent = currentQuestion.correctAns;
 }
+
+function runGame {
+
+}
+
+function checkAnswer {
+
+}
+
+function incrementScore {
+
+}
+
+function incrementWrongAnswer {
+
+}
+
+function displayQuestion {
+    
+}
