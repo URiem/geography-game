@@ -9,6 +9,7 @@ window.onload = function() {
     // let scoreArea = document.getElementById('score-area');
     document.getElementById("total-questions").textContent = allQuestions.length;
     let current = 0;
+    let score = 0;
 
     /**
      * This function loads all the questions into the questionArea
@@ -69,8 +70,11 @@ window.onload = function() {
                 loadQuestion(current);
                 loadAnswers(current);
             } else {
-                questionArea.innerHTML = 'Done';
+                questionArea.innerHTML = 'Done! Final Score Page is loading ...';
                 answerArea.innerHTML = '';
+                score = document.getElementById("correct-counter").innerText;
+                localStorage.setItem("mostRecentScore", score);
+                load(gameOver);
             }
         }
 
@@ -96,13 +100,13 @@ window.onload = function() {
 
     }
 
-    // function incrementQuestionCounter() {
+    function load(myURL) {
+        setTimeout(myURL, 3000);
+     }
 
-    //     let quizQuestionNumber = parseInt(document.getElementById("current-question").innerText);
-    //     quizQuestionNumber = quizQuestionNumber + 1;
-    //     return quizQuestionNumber;
-    
-    // }
+    function gameOver () {
+        window.location.assign('end_game.html');
+    }
 
 
 // Start the quiz

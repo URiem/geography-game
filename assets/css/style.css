@@ -94,3 +94,21 @@ footer a {
     margin: 0 5px 0 5px;
     font-size: 1.7rem;
 }
+
+.btn {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+iframe {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #222222;
+    max-width: 350px;
+}
