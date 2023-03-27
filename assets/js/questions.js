@@ -1,3 +1,4 @@
+ // An array that holds all the questions and possible answers, including the corrent answer.
 const allQuestions = [
     {
       question: 'What is Canadas Capital?',

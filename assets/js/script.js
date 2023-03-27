@@ -7,23 +7,8 @@ window.onload = function() {
     let questionArea = document.getElementById('question-area');
     let answerArea = document.getElementById('answers-list');
     // let scoreArea = document.getElementById('score-area');
+    document.getElementById("total-questions").textContent = allQuestions.length;
     let current = 0;
-
-    // An array that holds all the questions and possible answers, including the corrent answer.
-    const allQuestions = [
-        {
-        question: 'What is Canadas Capital?',
-        answers: ['Toronto', 'Vancouver', 'Ottowa', 'Quebec', 2],
-        },
-        {
-        question: 'What is Germanys Captial?',
-        answers: ['Berlin', 'Bonn' , 'Baden-Baden', 'Munich', 0],
-        },
-        {
-        question: 'What is the capital of Jamaica?',
-        answers: ['Montego Bay', 'Port Antonio', 'Santa Cruz', 'Kingston', 3],
-        }
-    ];
 
     /**
      * This function loads all the questions into the questionArea
@@ -80,7 +65,7 @@ window.onload = function() {
 
             if  (current < allQuestions.length - 1) {
                 current += 1;
-
+                document.getElementById("current-question").innerText = current +1;
                 loadQuestion(current);
                 loadAnswers(current);
             } else {
@@ -111,9 +96,16 @@ window.onload = function() {
 
     }
 
+    // function incrementQuestionCounter() {
+
+    //     let quizQuestionNumber = parseInt(document.getElementById("current-question").innerText);
+    //     quizQuestionNumber = quizQuestionNumber + 1;
+    //     return quizQuestionNumber;
+    
+    // }
+
 
 // Start the quiz
 loadQuestion(current);
 loadAnswers(current);
-
 };

@@ -49,19 +49,32 @@ ul {
     border-radius: 0.5rem;
 }
 
+#question-counter {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
 #score-area {
     padding: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.correct {
+    color: rgb(7, 136, 7);
+}
+
+.wrong {
+    color: rgb(246, 0, 0);
 }
 
 #correct-counter {
-    color: rgb(14, 217, 14);
     margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 #wrong-counter {
-    color: rgb(246, 0, 0);
     margin-left: 2rem;
 }
 

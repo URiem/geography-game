@@ -11,29 +11,19 @@
 </head>
 <body>
     <h1>Geography Quiz</h1>
-
     <div class="opaque">
     <h2>Test your geographic knowledge!</h2>
-
     <div class="quiz-area">
-        
         <h3 id="question-area"></h3>
-
         <div id="answers-area">
-            <ul id="answers-list">
-               
+            <ul id="answers-list"> 
             </ul>
         </div>
-        
-        <div>Question  <span id="current-question"></span> of <span id="total-questions"></span></div>
-
     </div>
-
+    <div id="question-counter">Question  <span id="current-question">1</span> of <span id="total-questions"></span></div>
     <div id="score-area">
-        <i class="fa-solid fa-check"></i> :
-        <span id="correct-counter">0</span>
-        <i class="fa-solid fa-x"></i> :
-        <span id="wrong-counter">0</span>
+        <span class="correct"><i class="fa-solid fa-check"></i> : <span id="correct-counter">0</span></span>
+        <span class="wrong"><i class="fa-solid fa-x"></i> : <span id="wrong-counter">0</span></span>
     </div>
 
 </div>
