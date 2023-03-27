@@ -35,12 +35,12 @@ h2 {
     font-size: 1.2rem;
 }
 
-/* ul {
+ul {
     list-style-type: none;
     padding: 0;
-} */
+}
 
-.quiz-area button {
+.quiz-area li {
     padding: 0.5rem;
     margin: 0.3rem;
     text-align: center;

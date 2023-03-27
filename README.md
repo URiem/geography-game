@@ -487,6 +487,7 @@ Resources:
 - Movie Quotes Quiz by Jose Maciel https://zemaciel.github.io/project-02/index.html
 - Mike Dane on YouTube https://www.youtube.com/watch?v=LQGTb112N_c
 - Code by Marek https://www.codehim.com/vanilla-javascript/javascript-multiple-choice-questions-code/
+https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
 
 
 ### Acknowledgements
