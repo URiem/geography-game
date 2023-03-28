@@ -1,5 +1,5 @@
 let finalScore = document.getElementById('final-score');
 let mostRecentScore = localStorage.getItem("mostRecentScore");
-let userName = localStorage.getItem("userName");
+let userLevel = localStorage.getItem("userLevel");
 
-finalScore.innerText = mostRecentScore + userName ;
+finalScore.innerText = `${mostRecentScore} @ level  ${userLevel}` ;
