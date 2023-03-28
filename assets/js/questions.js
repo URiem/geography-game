@@ -9,8 +9,8 @@ const allQuestions = [
       answers: ['Berlin', 'Bonn' , 'Baden-Baden', 'Munich', 0]
     },
     {
-      question: 'What is the capital of Jamaica?',
-      answers: ['Montego Bay', 'Port Antonio', 'Santa Cruz', 'Kingston', 3]
+      question: 'What is the capital of Brazil?',
+      answers: ['Sao Paolo', 'Rio de Janeiro', 'Fortaleza', 'Brazilia', 3]
     },
     {
       question: 'What is the capital of Norway?',
@@ -42,7 +42,7 @@ const allQuestions = [
     }
   ]
 
-  const = allQuestionsHard [
+const allQuestionsHard = [
     {
       question: 'What is the capital of Lichtenstein?',
       answers: ['Vaduz', 'Schaan' , 'Triesen', 'Balzers', 0]
@@ -72,16 +72,16 @@ const allQuestions = [
       answers: ['Rabat', 'Marrakesh' , 'Casalanca', 'Tangier', 0]
     },
     {
-      question: 'What is the capital of Italy?',
-      answers: ['Naples', 'Rome' , 'Milan', 'Palermo', 1]
+      question: 'What is the capital of Jamaica?',
+      answers: ['Montego Bay', 'Port Antonio', 'Santa Cruz', 'Kingston', 3]
     },
     {
-      question: 'What is the capital of Italy?',
-      answers: ['Naples', 'Rome' , 'Milan', 'Palermo', 1]
+      question: 'What is the capital of Guyana?',
+      answers: ['Linden', 'Bartica' , 'Georgetown', 'Buxton', 2]
     },
     {
-      question: 'What is the capital of Italy?',
-      answers: ['Naples', 'Rome' , 'Milan', 'Palermo', 1]
+      question: 'What is the capital of Guatemala?',
+      answers: ['Quetzaltenango', 'Escuintla' , 'Guatemala City', 'Mixco', 2]
     }
   ]
   
