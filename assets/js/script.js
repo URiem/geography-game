@@ -17,8 +17,12 @@
         let userChoice = levelChoice.textContent;
         if (userChoice === 'Easy') {
             allQuestions = allQuestionsEasy;
-        } else if (userChoice === 'Hard') {
-            allQuestions = allQuestionsHard;
+        } else if (userChoice === 'Intermediate') {
+            allQuestions = allQuestionsIntermediate;
+        } else if (userChoice === 'Advanced') {
+            allQuestions = allQuestionsAdvanced;
+        } else if (userChoice === 'Expert') {
+            allQuestions = allQuestionsExpert;
         } else {
             alert('You have not made a choice!')
         };
