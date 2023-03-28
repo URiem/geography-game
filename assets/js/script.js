@@ -29,7 +29,7 @@
         document.getElementById("total-questions").textContent = allQuestions.length;
         document.getElementById("game-area").style.display = "initial";
         document.getElementById("welcome-area").style.display = "none";
-        localStorage.setItem("userName", document.getElementById("name").textContent);
+        // localStorage.setItem("userName", document.getElementById("name").textContent);
         
         return allQuestions;
         

@@ -49,37 +49,29 @@
 
 ## Introduction
 
-Creative Spaces is an art space and school in the Ratzeburg, Germany, area offering classes for children ages 4 - 14. The site is targeted towards parents who are looking for their children to expand and develop their creative abilities. The space offers special events as well such as birthday parties and summer camps.
+The Geography Game is a multiple choice online quiz testing the users knowledge on the capital cities of the world.
 
 ## Project Goals
 
 ### User Goals
-- Find an open, inviting and versitile art space for children in Ratzeburg, Germany.
-- Find guided art classes for children.
-- Find an open art exploration space for children.
-- Become part of a community of like-minded children and parents of artistially inclined children.
+- The site's user wants to play an online quiz to test their geographic knowledge about capital cities of the world.
 
 ### Site Owner Goals
-- Attract parents and their children to the creative space.
-- Increase numbers of students participating in the space.
-- Promote art as an invaluable developmental tool for children.
-- Teach and promote artistic skills.
-- Fascilitate a space for social interactions and bonding.
+- The site owner's goal is to provided an entertaining and appropriately challenging quiz to the online user.
 
 ## User Experience
 
 ### Strategy
 
 #### Target Audience
-- Parents looking to enroll their children in art classes.
-- Parents looking to find an artistic outlet for their children.
-- School age children looking for a creative space to expand their artistic skills.
+- Users with an interest in geography.
+- Users looking for entertaining content online.
+
 
 #### User Requirements and Expectations
 - Simple and intuitive navigation system.
-- Find relevant information easily and quickly.
 - Links work as expected.
-- Easy was to contact the business.
+- Immediate feedback on progress.
 - Visually appealing responsive design.
 - Accessibility.
 
@@ -87,58 +79,50 @@ Creative Spaces is an art space and school in the Ratzeburg, Germany, area offer
 
 ##### First-time User
 As a first time user, I want to ...
-1. ... know what services are offered at Creative Spaces.
-2. ... know times, locations, and types of classes offered.
-3. ... know how to get in contact with the business and request more information.
-4. ... find more information about the staff mentoring and supervising the children.
-5. ... get a feel for what to expect from the classes and fascilities.
+1. ... easily navigate thought the quiz.
+2. ... get clear feedback on my score.
+
 
 ##### Returning Users
 As a returning user, I want to ...
-1. ... see the times and types of classes offered.
-2. ... see if there are any new classes offered.
-3. ... find social media links to connect with the business.
-4. ... find directions to the location of the business.
+1. ... try a higher-level game.
+2. ... see my previous scores.
 
 ##### Site owner
 As the site owner, I want users to ...
-1. ... interact with the space, learn about the space, learn about the services offered, learn about the benefits of the service, and request more information.
-2. ... feel comfortable and at ease reaching out for more information.
+1. ... interact with the game, stay engaged and enjoy the challenge.
+2. ... return to the game in the future.
 
 ### Scope
 
 #### Intial Stage
 
-At the initial stage the site will include the basic relevant information. It will include information on the art school and it's motivating principles. It will include a list of classes offered. It will communicate to the user the experience and trustworthyness of the staff running the space. It will make contacting the school easy and promote an approachabe image. The site will include a picture gallery full of impressions of the space and it's operations.
+At the initial stage the site will include a welcome page that gives the user a choice of four levels of difficulty of the game and lets them enter a username. Then the game will start and run though 10 questions at the chosen level. A final end of game page will then be shown where the user can opt to save the results and play the game again.
 
 #### Future Additions
 
-In future expansion the site could include a more detailed area for news and special events, such as summer camps, and art exhibits, and a pricing structure of the services offered. 
+ 
 
 ### Structure
 
 #### Wireframes
 
-The structure of the initial site will include four pages:
+The structure of the initial site will include three pages:
 
-1. **Home Page** with navigation features in a header and footer, a section on the motivations and philosphy of the space, a section on the classes offered and information on location.
+1. **Welcome Page** with four difficulty levels of the game to choose from and an option to enter a username.
 
-![Home](documentation/home-top.png)
-
-![Home](documentation/home-middle.png)
-
-![Home](documentation/home-bottom.png)
+![Welcome](documentation/home-top.png)
 
 
-2. **About Page** with information on the staff and more details about the classes/spaces they fascilitate. This page will include the same header and footer as the main page.
+2. **Game Page** which runs through ten questions at the users chosen level of difficulty. It keeps track of the score.
 
-![About](documentation/about.png)
+![Game](documentation/about.png)
 
-3. **Contact Page** with a detailed form that includes name and email fields, as well as details on the users interest in the space and the age of the child who is considering use of the space. There will be a field for a text message as well.
+3. **End of Game Page** which displays the users final score with a matching message. It gives and option to play the game again or save the users score.
 
-![Contact](documentation/signup.png)
+![End of Game](documentation/signup.png)
 
-4. **Gallery Page** with a wealth of images that will give a feel and impression of art produced by staff and students at the space.
+4. **Score Tally Page** with a wealth of images that will give a feel and impression of art produced by staff and students at the space.
 
 ![Gallery](documentation/gallery.png)
 
@@ -259,6 +243,7 @@ Kalam is the font used for high level heading such as the business name, text in
 ### Languages
 - HTML
 - CSS
+- JavaScript
 
 ### Frameworks & Tools
 - Git
