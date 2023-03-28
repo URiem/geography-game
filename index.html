@@ -12,8 +12,20 @@
 <body>
     <h1>Geography Quiz</h1>
     <h2>Test your geographic knowledge!</h2>
-    <div class="opaque">
-        <div class="quiz-area">
+    
+    <div id="welcome-area" class="opaque">
+        <h3>Welcome to the game!</h3>
+        <h4>Choose your level:</h4>
+        <ul id='question-levels'>
+            <li class='level' onClick='questionChoice(this,0)'>Easy</li>
+            <li class='level' onClick='questionChoice(this,0)'>Medium</li>
+            <li class='level' onClick='questionChoice(this,0)'>Hard</li>
+            <li class='level' onClick='questionChoice(this,0)'>Rediculous</li>
+        </ul>
+    </div>
+    
+    <div class="opaque" id="game-area">
+        <div id="quiz-area">
             <h3 id="question-area"></h3>
             <div id="answers-area">
                 <ul id="answers-list"> 

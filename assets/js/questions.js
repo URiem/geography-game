@@ -1,5 +1,5 @@
  // An array that holds all the questions and possible answers, including the corrent answer.
-const allQuestions = [
+const allQuestionsEasy = [
     {
       question: 'What is the captial of Canada?',
       answers: ['Toronto', 'Vancouver', 'Ottowa', 'Quebec', 2],

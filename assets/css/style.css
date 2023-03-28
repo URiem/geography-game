@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@400;700&display=swap');
 
+/* CSS HEX
+--ecru: #DAC28Cff;
+--khaki: #B6A48Dff;
+--ecru-2: #DABA6Eff;
+--lion: #BD8E52ff;
+--silver: #BAB3ABff;
+
+/* SCSS RGB */
+/* $ecru: rgba(218, 194, 140, 1);
+$khaki: rgba(182, 164, 141, 1);
+$ecru-2: rgba(218, 186, 110, 1);
+$lion: rgba(189, 142, 82, 1);
+$silver: rgba(186, 179, 171, 1); */
+
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -24,14 +39,49 @@ h2 {
     margin-top: 0;
 }
 
+/* Styling for the welcome area */
+
+#welcome-area {
+    font-size: 1.2rem;
+}
+
+#welcome-area li {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+#welcome-area li:hover {
+    background-color: #B6A48Dff;
+}
+
+#welcome-area input {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+/* Styling for central quiz area */
 .opaque {
     background-color: rgba(250, 249, 249, 0.7);
     padding: 1.5rem;
     border-radius: 0.5rem;
     text-align: center;
+    width: 450px;
 }
 
-.quiz-area {
+#game-area{
+    display: none;
+}
+
+#quiz-area {
     font-size: 1.2rem;
 }
 
@@ -40,7 +90,7 @@ ul {
     padding: 0;
 }
 
-.quiz-area li {
+#quiz-area li {
     padding: 0.5rem;
     margin: 0.3rem;
     text-align: center;
@@ -78,6 +128,7 @@ ul {
     margin-left: 2rem;
 }
 
+/* Styling of the footer */
 footer {
     display: flex;
     justify-content: center;
@@ -95,6 +146,8 @@ footer a {
     font-size: 1.7rem;
 }
 
+
+/* Styling of the final end of game score page */
 .btn {
     padding: 0.5rem;
     margin: 0.3rem;
@@ -107,7 +160,7 @@ footer a {
     color: black;
 }
 
-iframe {
+img {
     border-radius: 20px;
     box-shadow: 5px 5px 10px #222222;
     max-width: 350px;

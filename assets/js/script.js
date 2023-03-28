@@ -2,14 +2,38 @@
 // including all dependent resources such as stylesheets, scripts, iframes, and images. 
 // This is in contrast to DOMContentLoaded, which is fired as soon as the page DOM 
 // has been loaded, without waiting for resources to finish loading.
-window.onload = function() {
+// window.onload = function() {
 
     let questionArea = document.getElementById('question-area');
     let answerArea = document.getElementById('answers-list');
     // let scoreArea = document.getElementById('score-area');
-    document.getElementById("total-questions").textContent = allQuestions.length;
+    // let allQuestions = allQuestionsEasy;
+    // document.getElementById("total-questions").textContent = allQuestions.length;
     let current = 0;
     let score = 0;
+
+    function questionChoice(levelChoice,curr) {
+
+        let userChoice = levelChoice.textContent;
+        if (userChoice === 'Easy') {
+            allQuestions = allQuestionsEasy;
+        } else if (userChoice === 'Hard') {
+            allQuestions = allQuestionsHard;
+        } else {
+            alert('You have not made a choice!')
+        };
+
+         // Start the quiz
+        loadQuestion(curr);
+        loadAnswers(curr);
+        document.getElementById("total-questions").textContent = allQuestions.length;
+        document.getElementById("game-area").style.display = "initial";
+        document.getElementById("welcome-area").style.display = "none";
+        localStorage.setItem("userName", document.getElementById("name").textContent);
+        
+        return allQuestions;
+        
+    }
 
     /**
      * This function loads all the questions into the questionArea
@@ -110,6 +134,6 @@ window.onload = function() {
 
 
 // Start the quiz
-loadQuestion(current);
-loadAnswers(current);
-};
+// loadQuestion(current);
+// loadAnswers(current);
+// };
