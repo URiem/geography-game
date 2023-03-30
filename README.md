@@ -81,12 +81,14 @@ The Geography Game is a multiple choice online quiz testing the users knowledge 
 As a first time user, I want to ...
 1. ... easily navigate thought the quiz.
 2. ... get clear feedback on my score.
+3. ... easily return to the beginning of the game and play again.
 
 
 ##### Returning Users
 As a returning user, I want to ...
 1. ... try a higher-level game.
 2. ... see my previous scores.
+3. ... find out more about the game developer.
 
 ##### Site owner
 As the site owner, I want users to ...
@@ -243,6 +245,12 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 
 The JSHint (https://jshint.com/) was used to validate the JavaScript files.
 
+<details>
+<summary>JS Validation Screenshot</summary>
+<img src="documentation/cssvalidation.png" width="700">
+</details>
+
+
 ### Accessibility & Performance
 
 The Lighthouse feature on Google Devtools was used to assess accessibility and performance. All pages score high on accessibility. The gallery page scores lowest on performance due to the large number of images.
@@ -273,105 +281,76 @@ The websites compatability was tested on the following browsers:
 
 ### Testing User Stories
 
-1. As a first time user, I want to know what services are offered at Creative Spaces.
+
+As the site owner, I want users to ...
+1. ... interact with the game, stay engaged and enjoy the challenge.
+2. ... return to the game in the future.
+
+
+1. As a first time user, I want to easily navigate thought the quiz.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Home page | Navigate to the type of art activities you are interested in | Locating information on activities offered | Works as expected |
+| Welcome Page | Choose the level at which you want to play | The game starts | Works as expected |
 
 
-2. As a first time user, I want to know times, location, and types of classes offered.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Home page | Navigate to the type of art activities you are interested in | See classes and times offered | Works as expected |
-| Footer - address | Scroll down to the footer of the page | Find the address of the school | Works as expected |
-
-3. As a first time user, I want to know how to get in contact with the business and request more information.
+2. As a first time user, I want to get clear feedback on my score.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
-| Footer-social media links  | On any page scroll down to the footer | Contact via any social media platform | Works as expected | 
+| Quiz page | Click quiz answers | Wrong and correct answer scores are updated and displayed below the answers | Works as expected |
 
-
-4. As a first time user, I want to find more information about the staff mentoring and supervising the children.
+3. As a first time user, I want to easily return to the beginning of the game and play again.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| About page | Navigate to the about page | Find information on the staff and their classes | Works as expected |
-
-5. As a first time user, I want to get a feel for what to expect from the classes and fascilities.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| About page | Navigate to the about page | Find information on the staff and their classes | Works as expected |
-| Gallery page | Navigate to the gallery page | Find samples of work produced by teachers and students | Works as expected |
+| End of Game page | Click on the Play Again button | Links back to the welcome page and the game starts over | Works as expected |
 
 
-6. As a returning user, I want to see the times and types of classes offered.
+4. As a returning user, I want to try a higher-level game.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Home page | Navigate to the type of art activities you are interested in | Locating information on activities offered | Works as expected |
+| Welcome page | Choose level of game at which to play | Game will play at chosen level | Works as expected |
 
-7. As a returning user, I want to see if there is any new classes offered.
+4. As a returning user, I want to see my previous scores.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form for more information | Works as expected |
-| Footer-social media links  | On any page scroll down to the footer | See if new classes are advertised on social media | Works as expected | 
+| End of Game Page | Enter username, click submit, and the score is saved | A page displays with saved scores | Not yet implemented |
 
-8. As a returning user, I want to find social media links to connect with the business.
+5. As a returning user, find out more about the game developer.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Footer-social media links  | On any page scroll down to the footer | Find social media links | Works as expected | 
 
-9. As a returning user, I want to find directions to the location of the business.
+
+6. As the site owner, I want users to interact with the game, stay engaged and enjoy the challenge.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Footer - address  | On any page scroll down to the footer | Find address of the school | Works as expected | 
+| Welcome Page | Choose from four challenge levels | Game commences with different questions | Works as expected |
+| End of Game Page | Choose to play again | Game starts over | Works as expected |
 
-
-10. As the site owner, I want users to interact with the space, learn about the space, learn about the services offered, learn about the benefits of the service, and sign up for more information.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Home page | Navigate to the type of art activities and philosophy section | Find information on activities offered and business motivation | Works as expected |
-| Footer-social media links  | On any page scroll down to the footer | Contact via any social media platform | Works as expected | 
-| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
-| About page | Navigate to the about page and read about staff backgrounds and classes they offer | Read the page | Works as expected |
-
-
-
-11. As the site owner, I want users to feel comfortable and at ease reaching out for more information.
+7. As the site owner, I want users to return to the game in the future.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Footer-social media links  | On any page scroll down to the footer | Contact via any social media platform | Works as expected | 
-| Contact page | Navigate to the contact page and locate the form | Find and fill out contact form | Works as expected |
-
+|   |  |  |  | 
 
 #### Room for improvement on User Stories
 
 While all the minimum criteria for fullfilling the user stories are met, there are several items that could be improved upon:
 
-1. A map could be included at the bottom of the home page to give more explicit directions to the location. This would strengthen user story number 9.
-
-2. A  more explicit section or link could be provided on new services, news, or special events. This would stengthen user story number 7.
-
-3. More information about the fascilities could be included, in the form of text about or images of the building, rooms, art supplies and materials provided at the space. This would strengthen user story number 5. 
-
+1. Links to share game on social media.
+2. Implement score saving mechanism.
 
 ## Bugs & Fixes
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| Images framed in the philosophy section failed to be responsive at very small screen sizes. | Max-width of image was set to 90% and margins to % values also for more responsiveness |
-| Header styling failed on small screen sizes | Font size of logo and menu was decreased and menu floated left to fit header on two lines |
-| Spurious tiny underscore lines appeared between the social media links when using 'display: inline' for the CSS styling of the .social-networks class. | Using 'display: flex' eliminated the lines. | 
+| Bug | Fix |
 
 ## Deployment & Development
 
@@ -380,7 +359,7 @@ The website was deployed using GitHub Pages by following these steps:
 1. In the GitHub respository navigate to the Settings tab.
 2. Select Pages from the menu on the left-hand side of the page.
 3. For the source select Branch: 'main' and then select: 'save'.
-4. After the webpage refreshes automatically a ribbon at the top will displays the following message: "Your site is live at https://uriem.github.io/art-school/"
+4. After the webpage refreshes automatically a ribbon at the top will displays the following message: "Your site is live at https://uriem.github.io/geography-game/"
 
 The website repository can be forked by the following steps:
 
@@ -404,18 +383,15 @@ The repository can be cloned by the following steps:
 Images not referenced below are owned by the developer.
 
 Images:
-* Hero image by <a href="https://unsplash.com/@dragos126">Dragos Gontariu</a> on <a href="https://unsplash.com/photos/54VAb3f1z6w">Unsplash</a>
-* 
+* Background image by <a href="https://unsplash.com/@drwmrk">Andrew Stutesman</a> on <a href="https://unsplash.com/photos/l68Z6eF2peA">Unsplash</a>
+* End of Game page image by <a href="https://unsplash.com/@dinoreichmuth">Dino Reichmuth</a>  on <a href="https://unsplash.com/photos/A5rCN8626Ck">Unsplash</a>
 
 ### Code
 
-Resources:
+Resources and inspiration came from a few sources:
 
-- Movie Quotes Quiz by Jose Maciel https://zemaciel.github.io/project-02/index.html
-- Mike Dane on YouTube https://www.youtube.com/watch?v=LQGTb112N_c
-- Code by Marek https://www.codehim.com/vanilla-javascript/javascript-multiple-choice-questions-code/
-https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
-
+- Movie Quotes Quiz by Jose Maciel https://zemaciel.github.io/project-02/index.html - is where I got the idea for my quiz. I enjoyed much of the functionality and features of his game and took inspriration from it as I was developing my own.
+- Code by Marek https://www.codehim.com/vanilla-javascript/javascript-multiple-choice-questions-code/ helped me to set up the core functionality of the quiz.
 
 ### Acknowledgements
 

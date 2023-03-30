@@ -1,3 +1,7 @@
+// Elements of code where taken from - Code by Marek https://www.codehim.com/vanilla-javascript/javascript-multiple-choice-questions-code/
+// Inpsiration and guidance for certain aspect of code were also obtained from the Code Institutes Love Maths game
+// and the Movie Quotes Quiz by Jose Maciel https://zemaciel.github.io/project-02/index.html
+
 // The window.load event is fired when the whole page/window has loaded, 
 // including all dependent resources such as stylesheets, scripts, iframes, and images. 
 // This is in contrast to DOMContentLoaded, which is fired as soon as the page DOM 
