@@ -1,9 +1,9 @@
 # Creative Spaces
 (Developer: Ulrike Riemenschneider)
 
-![Mockup image](documentation/iamresponsive.png)
+![Mockup image](docs/iamresponsive.png)
 
-[Live webpage](https://uriem.github.io/art-school/index.html)
+[Live webpage](https://uriem.github.io/geography-game/)
 
 ## Table of Content
 
@@ -97,7 +97,7 @@ As the site owner, I want users to ...
 
 #### Intial Stage
 
-At the initial stage the site will include a welcome page that gives the user a choice of four levels of difficulty of the game and lets them enter a username. Then the game will start and run though 10 questions at the chosen level. A final end of game page will then be shown where the user can opt to save the results and play the game again.
+At the initial stage the site will include a welcome page that gives the user a choice of four levels of difficulty of the game. Then the game will start and run though 10 questions at the chosen level. A final end of game page will then be shown where the user can opt to save the results and play the game again.
 
 #### Future Additions
 
@@ -109,134 +109,85 @@ At the initial stage the site will include a welcome page that gives the user a 
 
 The structure of the initial site will include three pages:
 
-1. **Welcome Page** with four difficulty levels of the game to choose from and an option to enter a username.
+1. **Welcome Page** with four difficulty levels of the game to choose from.
 
-![Welcome](documentation/home-top.png)
+![Welcome]()
 
 
-2. **Game Page** which runs through ten questions at the users chosen level of difficulty. It keeps track of the score.
+2. **Game Page** which runs through ten questions at the users chosen level of difficulty. It keeps track of the score in a score area below the answers.
 
-![Game](documentation/about.png)
+![Game]()
 
-3. **End of Game Page** which displays the users final score with a matching message. It gives and option to play the game again or save the users score.
+3. **End of Game Page** which displays the users final score and level at which the game was played with a matching message. It gives and option to play the game again or enter a username and save the score and level of play.
 
-![End of Game](documentation/signup.png)
+![End of Game]()
 
-4. **Score Tally Page** with a wealth of images that will give a feel and impression of art produced by staff and students at the space.
+4. **Score Tally Page** displays the users past game scores including the level at which the game was played.
 
-![Gallery](documentation/gallery.png)
+![Gallery]()
 
 5. **404 Page** - a simple 404 Error page is also included.
 
 ### Skeleton
 
-As described in the previous section with the aid of wireframes, the website includes four pages, which all have a consistent header and footer. The home page includes several calls to action, which link to the about page and the contact page. The gallery has an interactive caption feature. Here are more details of the various page features:
+As described in the previous section with the aid of wireframes, the online game site includes four pages, which all have a heading, a central display area and a footer. The welcome page allows the user to choose the level at which they would like to play the game, upon choosing a level the game loads and runs, adding to the score of correct or wrong answers as the answers are chosen. At the end of the game a page displaying the final score is displayed.
 
-#### Header
+#### Welcome page
 <details>
-<summary>Screenshot of header on desktop</summary>
-<img src="documentation/header.png" width="700">
-</details>
-<details>
-<summary>Screenshot of header on mobile</summary>
-<img src="documentation/mobileheader.png" width="400">
+<summary>Screenshot of Welcome page</summary>
+<img src="docs/welcomepage.png" width="700">
 </details>
 
-- Featured on all four main pages (and the 404 page).
-- Includes the company name/logo and a menu with links to the Homepage, About page, Gallery page and Contact page.
-- The header is fully responsive and changes to fill two lines on smaller screens.
-- If a user hovers over a menu option in desktop mode an animated bar shows them which option they are choosing. 
+- Features four clickable elements containing the choices of levels the user can opt for: Easy, Intermediate, Advanced, and Expert.
 
+#### Quiz page
+<details>
+<summary>Screenshot of Quiz page</summary>
+<img src="docs/quizpage.png" width="700">
+</details>
+
+- Features the question displayed at the top of the central content area.
+- Four clickable text elements contain the multiple choice answers.
+- A score area below the answers updates the correct and wrong answer tally every time the user chooses and answer.
+
+#### End of Game page
+<details>
+<summary>Screenshot of End of Game </summary>
+<img src="docs/endgamepage.png" width="700">
+</details>
+
+- Features the score and level at which the game was played.
+- An image in the center of the page makes the display more eye catching and appealing.
+- Below the image a button allows the user to return to the welcome page and play again.
 
 #### Footer
 <details>
 <summary>Screenshot of Footer</summary>
-<img src="documentation/footer.png" width="500">
-</details>
-<details>
-<summary>Screenshot of footer on mobile</summary>
-<img src="documentation/mobilefooter.png" width="400">
+<img src="docs/footer.png" width="500">
 </details>
 
-- Featured on all four main pages (and the 404 page).
-- Includes the address/location of the space.
-- Includes links to the social media pages which the company maintains: Facebook, Twitter, Instragram, and YouTube.
+- Featured on all pages (and the 404 page).
+- Includes links to the LinkedIn and GitHub page of the developer.
 - All links open in a new window.
-- The footer is fully responsive and changes to fill two lines on smaller screens. 
 
-
-
-#### Services offered
-<details>
-<summary>Screenshot of Services offered</summary>
-<img src="documentation/servicesofferedsection.png" width="700">
-</details>
-
-- Four panels detail the services/classes offered at the art school.
-- Age groups and class times are specified.
-- A call to action for more information is included in each panel.
-
-
-#### Call to action
-<details>
-<summary>Screenshot of calls to action</summary>
-<img src="documentation/calltoactionbutton.png" width="700">
-</details>
-
-- A call to action features immediately below the hero image. It links to the services offered section.
-- The call to action buttons in the panels for the classes offered link to About page and specifically the teacher running that class.
-- The call to action button in the special events panel links to the Contact page.
-
-
-#### About page
-<details>
-<summary>Screenshot of About page</summary>
-<img src="documentation/aboutpage.png" width="700">
-</details>
-
-- Features four images with information on each member of staff with a short biography and information on the class.
-
-
-#### Contact page
-<details>
-<summary>Screenshot of Conact page top</summary>
-<img src="documentation/contactformtop.png" width="500">
-</details>
-<details>
-<summary>Screenshot of Conact page bottom</summary>
-<img src="documentation/contactformbottom.png" width="500">
-</details>
-
-- Features a detailed form that a customer can submit to express specific interest and request more information.
-
-
-#### Gallery page and Images
-<details>
-<summary>Screenshot of Gallery page</summary>
-<img src="documentation/gallerypage.png" width="700">
-</details>
-
-- Features images of artwork created by the four members of staff listed on the About page. 
-- On a desktop, if the user hovers over the image a superimposed caption appears on each image.
-- On a mobile device the caption will appear if the user taps on the image.
 
 #### Future Additions
 
-A feature to be implemented in the future is a map with the location of the school at the bottom of the home page.
+
 
 ### Surface
 
-The surface design of the website is aimed to convey an artistic flair, while remaining uncluttered, and maintaining easy of readability. The color schemes and font were chosen accordingly.
+The surface design of the website is aimed to convey an adventurous and global feel, while remaining uncluttered, and maintaining easy of readability. The backgroundimage of a world map was choosen with this aim in mind and the color schemes was choosen to match the image.
 
 #### Color Scheme
 
 The color scheme is a balance of vibrant colors that draw attention and convey artistic energy. A vibrant purple color was chosen in conjunction with the hero image and a desire for them to blend together. It was used to frame all important information on the site and all clickable buttons are styled with this color. The remaining features on the site and font are a balance of a dark grey or black, as well as white or off white in order to maintain contrast and readability.
 
-![Color Scheme](documentation/colorscheme.png)
+![Color Scheme](docs/colorscheme.png)
 
 #### Font
 
-Kalam is the font used for high level heading such as the business name, text in the main body of the site and lowerlevel headings use Shantell Sans font. These fonts were chosen for the artistic character and to convey the fluency and flexibility of artistic experimentation.
+Roboto Slab is the font used for high level headings in the game, the clickable text of level choices and answers as well as the score counter ar in a matching Lato font. 
 
 ## Technologies Used
 
@@ -252,9 +203,15 @@ Kalam is the font used for high level heading such as the business name, text in
 - Balsamiq
 - Google Fonts
 - Font Awesome
-- ColorSpace
-- Favicon.io
+- Coolors.co
+
+### Helpful sites
+
+Several sites came in handy while developing the code to help with problem solving:
+
 - W3 Schools
+- stackoverflow.com
+- mdn web docs (https://developer.mozilla.org/)
 
 ## Testing and Validation
 
@@ -263,24 +220,15 @@ Kalam is the font used for high level heading such as the business name, text in
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages passed with no errors or warnings.
 
 <details>
-<summary>Home</summary>
+<summary>Welcome and Quiz Page</summary>
 <img src="documentation/indexhtmlval.png" width="700">
 </details>
 
 <details>
-<summary>About</summary>
+<summary>End of Game Page</summary>
 <img src="documentation/abouthtmlval.png" width="700">
 </details>
 
-<details>
-<summary>Gallery</summary>
-<img src="documentation/galleryhtmlval.png" width="700">
-</details>
-
-<details>
-<summary>Contact</summary>
-<img src="documentation/signuphtmlval.png" width="700">
-</details>
 
 ### CSS Validation
 
@@ -291,33 +239,27 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 <img src="documentation/cssvalidation.png" width="700">
 </details>
 
+### JavaScript Validation
+
+The JSHint (https://jshint.com/) was used to validate the JavaScript files.
+
 ### Accessibility & Performance
 
 The Lighthouse feature on Google Devtools was used to assess accessibility and performance. All pages score high on accessibility. The gallery page scores lowest on performance due to the large number of images.
 
 <details>
-<summary>Home</summary>
+<summary>Welcome and Quiz Page</summary>
 <img src="documentation/indexlh.png" width="700">
 </details>
 
 <details>
-<summary>About</summary>
+<summary>End of Game Page</summary>
 <img src="documentation/aboutlh.png" width="700">
 </details>
 
-<details>
-<summary>Gallery</summary>
-<img src="documentation/gallerylh.png" width="700">
-</details>
-
-<details>
-<summary>Contact</summary>
-<img src="documentation/signuplh.png" width="700">
-</details>
 
 #### Outstanding Issues
 
-During testing using Lighthouse issues related to performance and SEO were flaged, specifically on the Home page and Gallery page. Work to reduce these issues should continue. This will further improve the user experience.
 
 
 ### Browser Compatability
