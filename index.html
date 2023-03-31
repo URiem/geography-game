@@ -15,8 +15,18 @@
         <h2>Test your geographic knowledge!</h2>
     </header>
 
+    <section id="username-area" class="opaque">
+        <h3>Please enter a username to start the game!</h3>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <button type="submit" id="submit">Submit</button>
+            <span role="alert" id="usernameError" aria-hidden="true"></span>
+        </form>
+    </section>
+
     <section id="welcome-area" class="opaque">
-        <h3>Welcome to the game!</h3>
+        <h3 id="welcome-heading"></h3>
         <h4>Choose your level:</h4>
         <ul id='question-levels'>
             <li class='level' onClick='questionChoice(this,0)'>Easy</li>

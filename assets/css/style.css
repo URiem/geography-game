@@ -40,10 +40,26 @@ h2 {
     margin-top: 0;
 }
 
+/* Styling the username area */
+
+#usernameError {
+    display: none;
+    font-size: 1rem;
+}
+
+#usernameError.visible {
+    display: block;
+}
+
+input.invalid {
+    border-color: red;
+}
+
 /* Styling for the welcome area */
 
 #welcome-area {
     font-size: 1.2rem;
+    display: none;
 }
 
 #welcome-area li {

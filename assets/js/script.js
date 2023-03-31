@@ -1,6 +1,36 @@
 // Elements of code where taken from - Code by Marek https://www.codehim.com/vanilla-javascript/javascript-multiple-choice-questions-code/
 // Inpsiration and guidance for certain aspect of code were also obtained from the Code Institutes Love Maths game
 // and the Movie Quotes Quiz by Jose Maciel https://zemaciel.github.io/project-02/index.html
+// https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/
+
+const submit = document.getElementById("submit");
+
+submit.addEventListener('click', validate);
+
+function validate(e) {
+    e.preventDefault();
+
+    const usernameField = document.getElementById("username");
+
+    if (!usernameField.value) {
+        const usernameError = document.getElementById("usernameError");
+        usernameError.classList.add("visible");
+        usernameField.classList.add("invalid");
+        usernameError.setAttribute('aria-hidden', false);
+        usernameError.setAttribute('aria-invalid', true);
+        usernameError.innerText = "Please enter a username to proceed!"
+    }
+
+    if (usernameField.value) {
+        document.getElementById("welcome-area").style.display = "initial";
+        document.getElementById("username-area").style.display = "none";
+        localStorage.setItem("username", usernameField.value);
+    }
+}
+
+let user = localStorage.getItem("username");
+console.log(user);
+document.getElementById("welcome-heading").innerText = `Welcome to the Game ${user}!`;
 
 let questionArea = document.getElementById('question-area');
 let answerArea = document.getElementById('answers-list');

@@ -392,6 +392,7 @@ Resources and inspiration came from a few sources:
 
 - Movie Quotes Quiz by Jose Maciel https://zemaciel.github.io/project-02/index.html - is where I got the idea for my quiz. I enjoyed much of the functionality and features of his game and took inspriration from it as I was developing my own.
 - Code by Marek https://www.codehim.com/vanilla-javascript/javascript-multiple-choice-questions-code/ helped me to set up the core functionality of the quiz.
+- https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/
 
 ### Acknowledgements
 
