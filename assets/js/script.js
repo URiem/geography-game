@@ -4,9 +4,7 @@
 
 let questionArea = document.getElementById('question-area');
 let answerArea = document.getElementById('answers-list');
-// let scoreArea = document.getElementById('score-area');
-// let allQuestions = allQuestionsEasy;
-// document.getElementById("total-questions").textContent = allQuestions.length;
+let allQuestions;
 let current = 0;
 let score = 0;
 
