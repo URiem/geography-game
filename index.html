@@ -10,10 +10,12 @@
     <link rel="icon" type="image/x-icon" href="assets/images/ask-question.png">
 </head>
 <body>
-    <h1>Geography Quiz</h1>
-    <h2>Test your geographic knowledge!</h2>
-    
-    <div id="welcome-area" class="opaque">
+    <header>
+        <h1>Geography Quiz</h1>
+        <h2>Test your geographic knowledge!</h2>
+    </header>
+
+    <section id="welcome-area" class="opaque">
         <h3>Welcome to the game!</h3>
         <h4>Choose your level:</h4>
         <ul id='question-levels'>
@@ -22,9 +24,9 @@
             <li class='level' onClick='questionChoice(this,0)'>Advanced</li>
             <li class='level' onClick='questionChoice(this,0)'>Expert</li>
         </ul>
-    </div>
+    </section>
     
-    <div class="opaque" id="game-area">
+    <section class="opaque" id="game-area">
         <div id="quiz-area">
             <h3 id="question-area"></h3>
             <div id="answers-area">
@@ -40,10 +42,8 @@
             <span class="correct"><i class="fa-solid fa-check"></i> : <span id="correct-counter">0</span></span>
             <span class="wrong"><i class="fa-solid fa-x"></i> : <span id="wrong-counter">0</span></span>
         </div>
-    </div>
+    </section>
     
-    <script src="assets/js/questions.js"></script>
-    <script src="assets/js/script.js"></script>
     
     <footer>
         <a href="https://github.com/URiem" target="_blank" rel="noopener" aria-label="Github page of developer (opens in new tab).">
@@ -51,6 +51,9 @@
         <a href="https://www.linkedin.com/in/ulrike-r-8b538385/" target="_blank" rel="noopener" aria-label="LinkedIn page of developer (opens in new tab).">
             <i class="fa-brands fa-linkedin-in"></i></a>
     </footer>
+
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 
