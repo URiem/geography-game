@@ -7,6 +7,11 @@ const submit = document.getElementById("submit");
 
 submit.addEventListener('click', validate);
 
+/**
+ * This function validates that a username was input. It shows an error message if not.
+ * If a username is in put it saves it so it can be displayed throughout the game.
+ * @param {} e is an event
+ */
 function validate(e) {
     e.preventDefault();
 
@@ -38,6 +43,13 @@ let allQuestions;
 let current = 0;
 let score = 0;
 
+/**
+ * This function grabs the users choice of questions level.
+ * 
+ * @param {string} levelChoice is a string containing the level at which the user chooses to play the game
+ * @param {num} curr is the number of the current question 
+ * @returns allQuestions which is the array of questions used in the quiz
+ */
 function questionChoice(levelChoice,curr) {
 
     let userChoice = levelChoice.textContent;
@@ -55,7 +67,7 @@ function questionChoice(levelChoice,curr) {
 
      // Start the quiz
     loadQuestion(curr);
-    loadAnswers(curr);
+    // loadAnswers(curr);
     document.getElementById("total-questions").textContent = allQuestions.length;
     document.getElementById("level").textContent = userChoice;
     document.getElementById("game-area").style.display = "initial";
@@ -67,8 +79,8 @@ function questionChoice(levelChoice,curr) {
 }
 
 /**
- * This function loads all the questions into the questionArea
- * It grabs the current question based on the 'current'-variable
+ * This function loads all the current question with answers into the game area
+ * @param {number} curr is the number variable of the current question 
  */
 function loadQuestion(curr) {
 
@@ -77,15 +89,6 @@ function loadQuestion(curr) {
     questionArea.innerHTML = '';
     questionArea.innerHTML = question;
 
-}
-
-/**
- * This function loads all the possible answers of the given question
- * It grabs the needed answer-array with the help of the current-variable
- * Every answer is added with an 'onclick' - function.
- */
-function loadAnswers(curr) {
-    
     let answers = allQuestions[curr].answers;
     
     answerArea.innerHTML = '';
@@ -123,7 +126,6 @@ function checkAnswer(i, arr) {
             current += 1;
             document.getElementById("current-question").innerText = current +1;
             loadQuestion(current);
-            loadAnswers(current);
         } else {
             questionArea.innerHTML = 'Done! Final Score Page is loading ...';
             answerArea.innerHTML = '';
