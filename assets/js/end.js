@@ -15,7 +15,7 @@ if (userLevel == 'Easy' && mostRecentScore < 4) {
     document.getElementById('final-message').innerText = "Good progress!! Keep learning!";
 } else if (userLevel == 'Intermediate' && mostRecentScore < 8) {
     document.getElementById('final-message').innerText = "Nice work! See if you can improve!";
-} else if (userLevel == 'Intermadiate' && mostRecentScore <= 10) {
+} else if (userLevel == 'Intermediate' && mostRecentScore <= 10) {
     document.getElementById('final-message').innerText = "Excellent result at the intermediate level! Try the next level?";
 } else if (userLevel == 'Advanced' && mostRecentScore < 4) {
     document.getElementById('final-message').innerText = "Good job!! Keep learning!";
