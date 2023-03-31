@@ -15,7 +15,7 @@ function validate(e) {
     if (!usernameField.value) {
         const usernameError = document.getElementById("usernameError");
         usernameError.classList.add("visible");
-        usernameField.classList.add("invalid");
+        // usernameField.classList.add("invalid");
         usernameError.setAttribute('aria-hidden', false);
         usernameError.setAttribute('aria-invalid', true);
         usernameError.innerText = "Please enter a username to proceed!"

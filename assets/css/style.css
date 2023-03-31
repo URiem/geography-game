@@ -15,7 +15,7 @@ $ecru-2: rgba(218, 186, 110, 1);
 $lion: rgba(189, 142, 82, 1);
 $silver: rgba(186, 179, 171, 1); */
 
-
+/* reset default settings */
 body {
     margin: 0;
     min-height: 100vh;
@@ -42,17 +42,31 @@ h2 {
 
 /* Styling the username area */
 
+#username-area input {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#username-area label {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    font-size: 1.2rem;
+}
+
 #usernameError {
     display: none;
-    font-size: 1rem;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(246, 0, 0);
 }
 
 #usernameError.visible {
     display: block;
-}
-
-input.invalid {
-    border-color: red;
 }
 
 /* Styling for the welcome area */
@@ -73,15 +87,6 @@ input.invalid {
 
 #welcome-area li:hover {
     background-color: #B6A48Dff;
-}
-
-#welcome-area input {
-    padding: 0.5rem;
-    margin: 0.3rem;
-    background-color: whitesmoke;
-    border: 1px solid black;
-    border-radius: 0.5rem;
-    font-size: 1.2rem;
 }
 
 
@@ -176,17 +181,6 @@ footer a {
     font-size: 1.2rem;
     color: black;
 }
-
-/* input {
-    padding: 0.5rem;
-    margin: 0.3rem;
-    text-align: center;
-    background-color: whitesmoke;
-    border: 1px solid black;
-    border-radius: 0.5rem;
-    font-size: 1.2rem;
-    color: black;
-} */
 
 img {
     border-radius: 20px;
