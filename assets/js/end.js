@@ -1,7 +1,10 @@
 let finalScore = document.getElementById('final-score');
+let finalScoreUser = document.getElementById('final-score-user');
 let mostRecentScore = localStorage.getItem("mostRecentScore");
 let userLevel = localStorage.getItem("userLevel");
+let user = window.localStorage.getItem("username");
 
+finalScoreUser.innerText = `Hi ${user}! Your final score was:` ;
 finalScore.innerText = `${mostRecentScore} @ ${userLevel} Level` ;
 
 if (userLevel == 'Easy' && mostRecentScore < 4) {
@@ -32,3 +35,4 @@ if (userLevel == 'Easy' && mostRecentScore < 4) {
     document.getElementById('final-message').innerText = "Great work!";
 }
 
+window.localStorage.clear();

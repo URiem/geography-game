@@ -26,15 +26,17 @@ function validate(e) {
     }
 
     if (usernameField.value) {
+        console.log(usernameField.value)
+        window.localStorage.setItem("username", usernameField.value);
         document.getElementById("welcome-area").style.display = "initial";
         document.getElementById("username-area").style.display = "none";
-        localStorage.setItem("username", usernameField.value);
+        window.localStorage.setItem("username", usernameField.value);
     }
-}
 
-let user = localStorage.getItem("username");
-console.log(user);
-document.getElementById("welcome-heading").innerText = `Welcome to the game ${user}!`;
+    let user = window.localStorage.getItem("username");
+    document.getElementById("welcome-heading").innerText = `Welcome to the game ${user}!`;
+
+}
 
 let questionArea = document.getElementById('question-area');
 let answerArea = document.getElementById('answers-list');
