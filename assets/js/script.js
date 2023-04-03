@@ -20,7 +20,6 @@ function validate(e) {
     if (!usernameField.value) {
         const usernameError = document.getElementById("usernameError");
         usernameError.classList.add("visible");
-        // usernameField.classList.add("invalid");
         usernameError.setAttribute('aria-hidden', false);
         usernameError.setAttribute('aria-invalid', true);
         usernameError.innerText = "Please enter a username to proceed!"
@@ -110,7 +109,7 @@ function loadQuestion(curr) {
  * if it is the last question, then it will give feedback to say the game is over.
  * @param {number} i - index of the answer clicked by the user
  * @param {array} arr - array of possible answers for the current question
- * @returns 
+ * @returns {function} 
  */
 function checkAnswer(i, arr) {
 
@@ -135,7 +134,7 @@ function checkAnswer(i, arr) {
             localStorage.setItem("mostRecentScore", score);
             load(gameOver);
         }
-    }
+    } 
 }
 
 /**
@@ -158,10 +157,17 @@ function incrementWrongAnswer() {
 
 }
 
+/**
+ * This function delays the loading of myURL
+ * @param {string} myURL - URL is loaded with time delay 
+ */
 function load(myURL) {
     setTimeout(myURL, 3000);
 }
 
+/**
+ * This function loads the last page when the game is over
+ */
 function gameOver () {
     window.location.assign('end_game.html');
 }

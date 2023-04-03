@@ -8,12 +8,6 @@
 --lion: #BD8E52ff;
 --silver: #BAB3ABff;
 
-/* SCSS RGB */
-/* $ecru: rgba(218, 194, 140, 1);
-$khaki: rgba(182, 164, 141, 1);
-$ecru-2: rgba(218, 186, 110, 1);
-$lion: rgba(189, 142, 82, 1);
-$silver: rgba(186, 179, 171, 1); */
 
 /* reset default settings */
 body {
@@ -21,7 +15,7 @@ body {
     min-height: 100vh;
     background-image: url(../images/andrew-stutesman-unsplash-small.jpg);
     background-size: cover;
-    background-color: beige;
+    background-color: #BAB3ABff;
     font-family: Lato, sans-serif;
     font-weight: 400;
     display: flex;
