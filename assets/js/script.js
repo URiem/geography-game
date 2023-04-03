@@ -9,8 +9,8 @@ submit.addEventListener('click', validate);
 
 /**
  * This function validates that a username was input. It shows an error message if not.
- * If a username is in put it saves it so it can be displayed throughout the game.
- * @param {} e is an event
+ * If a username is provided it saves it so it can be displayed throughout the game.
+ * @param {event} e - event of a click
  */
 function validate(e) {
     e.preventDefault();
@@ -46,9 +46,9 @@ let score = 0;
 /**
  * This function grabs the users choice of questions level.
  * 
- * @param {string} levelChoice is a string containing the level at which the user chooses to play the game
- * @param {num} curr is the number of the current question 
- * @returns allQuestions which is the array of questions used in the quiz
+ * @param {string} levelChoice - level at which the user chooses to play the game
+ * @param {number} curr - the number of the current question 
+ * @returns {array} allQuestions - array of questions used in the quiz
  */
 function questionChoice(levelChoice,curr) {
 
@@ -67,7 +67,6 @@ function questionChoice(levelChoice,curr) {
 
      // Start the quiz
     loadQuestion(curr);
-    // loadAnswers(curr);
     document.getElementById("total-questions").textContent = allQuestions.length;
     document.getElementById("level").textContent = userChoice;
     document.getElementById("game-area").style.display = "initial";
@@ -79,8 +78,8 @@ function questionChoice(levelChoice,curr) {
 }
 
 /**
- * This function loads all the current question with answers into the game area
- * @param {number} curr is the number variable of the current question 
+ * This function loads the current question with answers into the game area
+ * @param {number} curr - number variable of the current question 
  */
 function loadQuestion(curr) {
 
@@ -109,6 +108,9 @@ function loadQuestion(curr) {
  * is the same as the correct answer. Then it checks if that was the last question
  * in the question array. If it is not, then the next question will be loaded, 
  * if it is the last question, then it will give feedback to say the game is over.
+ * @param {number} i - index of the answer clicked by the user
+ * @param {array} arr - array of possible answers for the current question
+ * @returns 
  */
 function checkAnswer(i, arr) {
 

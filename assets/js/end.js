@@ -54,3 +54,4 @@ if (userLevel == 'Easy' && mostRecentScore < 4) {
 
 
 // console.log(score);
+
