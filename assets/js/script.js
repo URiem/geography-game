@@ -34,7 +34,7 @@ function validate(e) {
 
 let user = localStorage.getItem("username");
 console.log(user);
-document.getElementById("welcome-heading").innerText = `Welcome to the Game ${user}!`;
+document.getElementById("welcome-heading").innerText = `Welcome to the game ${user}!`;
 
 let questionArea = document.getElementById('question-area');
 let answerArea = document.getElementById('answers-list');

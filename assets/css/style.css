@@ -63,6 +63,11 @@ h2 {
     display: block;
 }
 
+#instructions {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
 /* Styling for the welcome area */
 
 #welcome-area {
@@ -86,7 +91,7 @@ h2 {
 
 /* Styling for central quiz area */
 .opaque {
-    background-color: rgba(250, 249, 249, 0.7);
+    background-color: rgba(250, 249, 249, 0.8);
     padding: 1.5rem;
     border-radius: 0.5rem;
     text-align: center;
