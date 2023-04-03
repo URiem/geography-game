@@ -22,11 +22,11 @@ function validate(e) {
         usernameError.classList.add("visible");
         usernameError.setAttribute('aria-hidden', false);
         usernameError.setAttribute('aria-invalid', true);
-        usernameError.innerText = "Please enter a username to proceed!"
+        usernameError.innerText = "Please enter a username to proceed!";
     }
 
     if (usernameField.value) {
-        console.log(usernameField.value)
+        console.log(usernameField.value);
         window.localStorage.setItem("username", usernameField.value);
         document.getElementById("welcome-area").style.display = "initial";
         document.getElementById("username-area").style.display = "none";
@@ -63,8 +63,8 @@ function questionChoice(levelChoice,curr) {
     } else if (userChoice === 'Expert') {
         allQuestions = allQuestionsExpert;
     } else {
-        alert('You have not made a choice!')
-    };
+        alert('You have not made a choice!');
+    }
 
      // Start the quiz
     loadQuestion(curr);
@@ -136,7 +136,7 @@ function checkAnswer(i, arr) {
             localStorage.setItem("mostRecentScore", score);
             load(gameOver);
         }
-    } 
+    }; 
 }
 
 /**

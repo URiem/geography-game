@@ -40,7 +40,7 @@ const allQuestionsEasy = [
       question: 'What is the capital of New Zealand?',
       answers: ['Christchurch', 'Auckland' , 'Wellington', 'Hobbiton', 2]
     }
-  ]
+  ];
 
   const allQuestionsIntermediate = [
     {
@@ -83,7 +83,7 @@ const allQuestionsEasy = [
       question: 'What is the capital of Austria?',
       answers: ['Salzburg', 'Graz' , 'Vienna', 'Linz', 2]
     }
-  ]
+  ];
 
 const allQuestionsAdvanced = [
     {
@@ -126,7 +126,7 @@ const allQuestionsAdvanced = [
       question: 'What is the capital of Guatemala?',
       answers: ['Quetzaltenango', 'Escuintla' , 'Guatemala City', 'Mixco', 2]
     }
-  ]
+  ];
   
   const allQuestionsExpert = [
     {
@@ -169,5 +169,5 @@ const allQuestionsAdvanced = [
       question: 'What is the capital of Papa New Guinea?',
       answers: ['lea', 'Popondetta' , 'Madang', 'Port Moresby', 3]
     }
-  ]
+  ];
   
