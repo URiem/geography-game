@@ -190,3 +190,15 @@ img {
     box-shadow: 5px 5px 10px #222222;
     max-width: 350px;
 }
+
+@media screen and (max-width: 450px) {
+
+.opaque {
+    width: 90%;
+}
+
+img {
+    width: 80%;
+}
+
+}
