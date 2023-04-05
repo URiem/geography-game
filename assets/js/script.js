@@ -28,13 +28,13 @@ function validate(e) {
     if (usernameField.value) {
         console.log(usernameField.value);
         window.localStorage.setItem("username", usernameField.value);
-        document.getElementById("welcome-area").style.display = "initial";
+        document.getElementById("levelchoice-area").style.display = "initial";
         document.getElementById("username-area").style.display = "none";
         window.localStorage.setItem("username", usernameField.value);
     }
 
     let user = window.localStorage.getItem("username");
-    document.getElementById("welcome-heading").innerText = `Welcome to the game ${user}!`;
+    document.getElementById("levelchoice-heading").innerText = `Welcome to the game ${user}!`;
 
 }
 
@@ -71,7 +71,7 @@ function questionChoice(levelChoice,curr) {
     document.getElementById("total-questions").textContent = allQuestions.length;
     document.getElementById("level").textContent = userChoice;
     document.getElementById("game-area").style.display = "initial";
-    document.getElementById("welcome-area").style.display = "none";
+    document.getElementById("levelchoice-area").style.display = "none";
     localStorage.setItem("userLevel", userChoice);
     
     return allQuestions;

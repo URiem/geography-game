@@ -34,7 +34,17 @@ h2 {
     margin-top: 0;
 }
 
-/* Styling the username area */
+/* Styling of the central container for game content */
+
+.opaque {
+    background-color: rgba(250, 249, 249, 0.8);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 450px;
+}
+
+/* Styling the username and rules area */
 
 #username-area input {
     padding: 0.5rem;
@@ -72,14 +82,14 @@ h2 {
 }
 
 
-/* Styling for the welcome area */
+/* Styling for the game level choice area */
 
-#welcome-area {
+#levelchoice-area {
     font-size: 1.2rem;
     display: none;
 }
 
-#welcome-area li {
+#levelchoice-area li {
     padding: 0.5rem;
     margin: 0.3rem;
     text-align: center;
@@ -88,19 +98,7 @@ h2 {
     border-radius: 0.5rem;
 }
 
-#welcome-area li:hover{
-    background-color: #B6A48Dff;
-}
-
-
 /* Styling for central quiz area */
-.opaque {
-    background-color: rgba(250, 249, 249, 0.8);
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    text-align: center;
-    width: 450px;
-}
 
 #game-area{
     display: none;
@@ -123,11 +121,6 @@ ul {
     border: 1px solid black;
     border-radius: 0.5rem;
 }
-
-#quiz-area li:hover {
-    background-color: #B6A48Dff;
-}
-
 
 #question-counter {
     padding: 0.5rem;
@@ -158,6 +151,26 @@ ul {
     margin-left: 2rem;
 }
 
+
+/* Styling of the final end of game page */
+.btn {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+img {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #222222;
+    max-width: 350px;
+}
+
 /* Styling of the footer */
 footer {
     display: flex;
@@ -176,28 +189,21 @@ footer a {
     font-size: 1.7rem;
 }
 
+/* Setting responsiveness of game at different screen width */
 
-/* Styling of the final end of game score page */
-.btn {
-    padding: 0.5rem;
-    margin: 0.3rem;
-    text-align: center;
-    background-color: whitesmoke;
-    border: 1px solid black;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: black;
-}
+@media screen and (min-width: 1000px) {
 
-.btn:hover {
+#levelchoice-area li:hover{
     background-color: #B6A48Dff;
 }
 
-img {
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px #222222;
-    max-width: 350px;
+#quiz-area li:hover {
+    background-color: #B6A48Dff;
+}
+    
+.btn:hover {
+    background-color: #B6A48Dff;
+}
 }
 
 @media screen and (max-width: 450px) {
@@ -209,5 +215,4 @@ img {
 img {
     width: 80%;
 }
-
 }
