@@ -7,6 +7,7 @@ let user = window.localStorage.getItem("username");
 finalScoreUser.innerText = `Hi ${user}! Your final score was:` ;
 finalScore.innerText = `${mostRecentScore} @ ${userLevel} Level` ;
 
+
 if (userLevel == 'Easy' && mostRecentScore < 4) {
     document.getElementById('final-message').innerText = "Start Exploring!! There is so much more to learn!";
 } else if (userLevel == 'Easy' && mostRecentScore < 8) {
@@ -35,4 +36,3 @@ if (userLevel == 'Easy' && mostRecentScore < 4) {
     document.getElementById('final-message').innerText = "Great work!";
 }
 
-window.localStorage.clear();
