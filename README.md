@@ -393,6 +393,7 @@ Images not referenced below are owned by the developer.
 Images:
 * Background image by <a href="https://unsplash.com/@drwmrk">Andrew Stutesman</a> on <a href="https://unsplash.com/photos/l68Z6eF2peA">Unsplash</a>
 * End of Game page image by <a href="https://unsplash.com/@dinoreichmuth">Dino Reichmuth</a>  on <a href="https://unsplash.com/photos/A5rCN8626Ck">Unsplash</a>
+* 404 page image by <a href="https://unsplash.com/@fransaraco">Francesa Saraco</a>  on <a href="https://unsplash.com/photos/VKPAzDovWKU">Unsplash</a>
 
 ### Code
 
