@@ -49,7 +49,7 @@
 
 ## Introduction
 
-The Geography Game is a multiple choice online quiz testing the users knowledge on the capital cities of the world.
+The Geography Game is a multiple choice online quiz testing the users knowledge on the capital cities of the world. The user can choose between several levels of difficulty when playing the game. The user gets feedback on the number of questions in the ongoing quiz and the score.
 
 ## Project Goals
 
@@ -79,7 +79,7 @@ The Geography Game is a multiple choice online quiz testing the users knowledge 
 
 ##### First-time User
 As a first time user, I want to ...
-1. ... easily navigate thought the quiz.
+1. ... easily navigate though the quiz.
 2. ... get clear feedback on my score.
 3. ... easily return to the beginning of the game and play again.
 
@@ -99,10 +99,13 @@ As the site owner, I want users to ...
 
 #### Intial Stage
 
-At the initial stage the site will include a welcome page that gives the user a choice of four levels of difficulty of the game. Then the game will start and run though 10 questions at the chosen level. A final end of game page will then be shown where the user can opt to save the results and play the game again.
+At the initial stage the site will include a welcome section that displays the rules of the game and lets the user input a username, then the user is given a choice of four levels of difficulty of the game. Finally the game will start and run though 10 questions at the chosen level. An end of game page will then be shown where the user can opt to play the game again.
 
 #### Future Additions
 
+At the present stage of development the user gets only basic feedback on their progess in the form of a score tally below the question displayed. In future more feedback could be implemented, such as a delay in the loading of the next question, during this delay the chosen answer color background would change to indicate whether the answer was wrong (red background) or correct (green background). 
+
+In addition, it would enhance the experience of the user to be able to save scores and keep track of progress. This could be acchieved by adding a 'save score' option on the final page.
  
 
 ### Structure
@@ -111,19 +114,19 @@ At the initial stage the site will include a welcome page that gives the user a 
 
 The structure of the initial site will include three pages:
 
-1. **Welcome Page** with four difficulty levels of the game to choose from.
+1. **Welcome Section** displays the rules of the game and asks the user to input a username in order to proceed to playing the game.
 
 ![Welcome](docs/welcomepagewireframe.png)
 
-4. **Choose Level Page** displays the users past game scores including the level at which the game was played.
+4. **Choose Level Section** with four difficulty levels of the game to choose from.
 
 ![Level](docs/chooselevelwireframe.png)
 
-2. **Game Page** which runs through ten questions at the users chosen level of difficulty. It keeps track of the score in a score area below the answers.
+2. **Quiz Section** which runs through ten questions at the users chosen level of difficulty. It keeps track of the score in a score area below the answers.
 
-![Game](docs/quizpagewireframe.png)
+![Quiz](docs/quizpagewireframe.png)
 
-3. **End of Game Page** which displays the users final score and level at which the game was played with a matching message. It gives and option to play the game again or enter a username and save the score and level of play.
+3. **End of Game Page** which displays the users final score and level at which the game was played with a matching message. It gives and option to play the game again.
 
 ![End of Game](docs/endofgamewireframe.png)
 
@@ -131,25 +134,33 @@ The structure of the initial site will include three pages:
 
 ### Skeleton
 
-As described in the previous section with the aid of wireframes, the online game site includes four pages, which all have a heading, a central display area and a footer. The welcome page allows the user to choose the level at which they would like to play the game, upon choosing a level the game loads and runs, adding to the score of correct or wrong answers as the answers are chosen. At the end of the game a page displaying the final score is displayed.
+As described in the previous section with the aid of wireframes, the online game site includes four interactive sections, which all have a heading, a central display area and a footer. The welcome section requires the user to input a username to continue to the game. The user is then prompted to choose the level at which they would like to play the game, upon choosing a level the game loads and runs, adding to the score of correct or wrong answers as the answers are chosen. At the end of the game a page displaying the final score is displayed.
 
-#### Welcome page
+#### Welcome Section
 <details>
-<summary>Screenshot of Welcome page</summary>
-<img src="docs/welcomepage.png" width="700">
+<summary>Screenshot of Welcome Section</summary>
+<img src="docs/welcomesection.png" width="700">
+</details>
+
+- Features an input field. The user is required to enter a username to continue. A submit button initiates the next section if a username has been entered. The rules of the game are also diplayed.
+
+#### Choose A Level Section
+<details>
+<summary>Screenshot of the Choose a Level Section</summary>
+<img src="docs/chooselevelsection.png" width="700">
 </details>
 
 - Features four clickable elements containing the choices of levels the user can opt for: Easy, Intermediate, Advanced, and Expert.
 
-#### Quiz page
+#### Quiz Section
 <details>
-<summary>Screenshot of Quiz page</summary>
-<img src="docs/quizpage.png" width="700">
+<summary>Screenshot of Quiz Section</summary>
+<img src="docs/quizsection.png" width="700">
 </details>
 
 - Features the question displayed at the top of the central content area.
 - Four clickable text elements contain the multiple choice answers.
-- A score area below the answers updates the correct and wrong answer tally every time the user chooses and answer.
+- A score area below the answers updates the correct and wrong answer tally every time the user chooses and answer. It also keeps track of the current and total number of questions.
 
 #### End of Game page
 <details>
@@ -174,6 +185,7 @@ As described in the previous section with the aid of wireframes, the online game
 
 #### Future Additions
 
+To enhance the UX the user could be given an option on the final page to save their scores. Another page or section could then appear that would display past scores of the user.
 
 
 ### Surface
@@ -182,7 +194,7 @@ The surface design of the website is aimed to convey an adventurous and global f
 
 #### Color Scheme
 
-The color scheme is a balance of vibrant colors that draw attention and convey artistic energy. A vibrant purple color was chosen in conjunction with the hero image and a desire for them to blend together. It was used to frame all important information on the site and all clickable buttons are styled with this color. The remaining features on the site and font are a balance of a dark grey or black, as well as white or off white in order to maintain contrast and readability.
+The color scheme is a balance of earthy colors that that match the color scheme of the background image. On a desktop buttons and text elements change to colors from this palett when the user hovers over them. The footer background also matches the color scheme. The remaining features on the site and font are a balance of a dark grey or black, as well as white or off white in order to maintain contrast and readability.
 
 ![Color Scheme](docs/colorscheme.png)
 
@@ -218,7 +230,7 @@ Several sites came in handy while developing the code to help with problem solvi
 
 ### HTML Validation
 
-The W3C Markup Validation Service was used to validate the HTML of the website. All pages passed with no errors or warnings.
+The W3C Markup Validation Service was used to validate the HTML of the website. All pages passed with no errors. Warnings regarding empty headings can be ignored as the text content for the headings is provided by JavaScript as the game progesses.
 
 <details>
 <summary>Welcome and Quiz Page</summary>
@@ -242,17 +254,13 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 
 ### JavaScript Validation
 
-The JSHint (https://jshint.com/) was used to validate the JavaScript files.
+The JSHint (https://jshint.com/) was used to validate the JavaScript files. Small issues, such as missing semicolons, etc. were fixed. Unused variable warnings were ignored, as those variables or functions where called/used in either the html files or other JS files.
 
-<details>
-<summary>JS Validation Screenshot</summary>
-<img src="docs/" width="700">
-</details>
 
 
 ### Accessibility & Performance
 
-The Lighthouse feature on Google Devtools was used to assess accessibility and performance. All pages score high on accessibility. The gallery page scores lowest on performance due to the large number of images.
+The Lighthouse feature on Google Devtools was used to assess accessibility and performance. All pages score high on accessibility.
 
 <details>
 <summary>Welcome and Quiz Page</summary>
@@ -280,17 +288,14 @@ The websites compatability was tested on the following browsers:
 
 ### Testing User Stories
 
-
-As the site owner, I want users to ...
-1. ... interact with the game, stay engaged and enjoy the challenge.
-2. ... return to the game in the future.
-
-
-1. As a first time user, I want to easily navigate thought the quiz.
+1. As a first time user, I want to easily navigate though the quiz.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Welcome Page | Choose the level at which you want to play | The game starts | Works as expected |
+| Welcome Section | Input a username and submit | The choose a level section displays | Works as expected |
+| Choose A Level Section | Click on the choosen level | The game starts | Works as expected |
+| Quiz Section | Click through the answers | New questions are continuously displayed | Works as expected |
+| End of Game Page | Choose to play again | Welcome page displays | Works as expected |
 
 
 2. As a first time user, I want to get clear feedback on my score.
@@ -303,14 +308,14 @@ As the site owner, I want users to ...
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| End of Game page | Click on the Play Again button | Links back to the welcome page and the game starts over | Works as expected |
+| End of Game page | Click on the Play Again button | Links back to the welcome section and the game starts over | Works as expected |
 
 
 4. As a returning user, I want to try a higher-level game.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Welcome page | Choose level of game at which to play | Game will play at chosen level | Works as expected |
+| Choose A Level | Choose level of game at which to play | Game will play at chosen level | Works as expected |
 
 4. As a returning user, I want to see my previous scores.
 
@@ -329,14 +334,17 @@ As the site owner, I want users to ...
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Welcome Page | Choose from four challenge levels | Game commences with different questions | Works as expected |
-| End of Game Page | Choose to play again | Game starts over | Works as expected |
+| Welcome Section | Input a username and submit | The choose a level section displays | Works as expected |
+| Choose A Level Section | Click on the choosen level | The game starts | Works as expected |
+| Quiz Section | Click through the answers | New questions are continuously displayed | Works as expected |
+| End of Game Page | Choose to play again | Welcome page displays | Works as expected |
 
 7. As the site owner, I want users to return to the game in the future.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 |   |  |  |  | 
+
 
 #### Room for improvement on User Stories
 
@@ -349,7 +357,8 @@ While all the minimum criteria for fullfilling the user stories are met, there a
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-| Bug | Fix |
+| Username variable did not save/update correctly in Local Storage. In the html the username entered in the previous round of play displayed, as opposed to the new username entered in the current round of play. | The username was assigned to Local Storage inside the validation function as opposed to returned from the function and then assiged to Local Storage outside the function. This fixed the problem. |
+| On mobile displays the hover function for clickable text lead to glitches, which meant that clickable text would appear with highlighted background at inappropriate times. | Hover function was disabled on displays below a certain screen width. |
 
 ## Deployment & Development
 
