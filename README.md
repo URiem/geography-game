@@ -113,20 +113,19 @@ The structure of the initial site will include three pages:
 
 1. **Welcome Page** with four difficulty levels of the game to choose from.
 
-![Welcome]()
+![Welcome](docs/welcomepagewireframe.png)
 
+4. **Choose Level Page** displays the users past game scores including the level at which the game was played.
+
+![Level](docs/chooselevelwireframe.png)
 
 2. **Game Page** which runs through ten questions at the users chosen level of difficulty. It keeps track of the score in a score area below the answers.
 
-![Game]()
+![Game](docs/quizpagewireframe.png)
 
 3. **End of Game Page** which displays the users final score and level at which the game was played with a matching message. It gives and option to play the game again or enter a username and save the score and level of play.
 
-![End of Game]()
-
-4. **Score Tally Page** displays the users past game scores including the level at which the game was played.
-
-![Gallery]()
+![End of Game](docs/endofgamewireframe.png)
 
 5. **404 Page** - a simple 404 Error page is also included.
 
@@ -223,12 +222,12 @@ The W3C Markup Validation Service was used to validate the HTML of the website. 
 
 <details>
 <summary>Welcome and Quiz Page</summary>
-<img src="documentation/indexhtmlval.png" width="700">
+<img src="docs/indexhtmltesting.png" width="700">
 </details>
 
 <details>
 <summary>End of Game Page</summary>
-<img src="documentation/abouthtmlval.png" width="700">
+<img src="docs/endgamehtmltesting.png" width="700">
 </details>
 
 
@@ -238,7 +237,7 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 
 <details>
 <summary>CSS Validation Screenshot</summary>
-<img src="documentation/cssvalidation.png" width="700">
+<img src="docs/csstesting.png" width="700">
 </details>
 
 ### JavaScript Validation
@@ -247,7 +246,7 @@ The JSHint (https://jshint.com/) was used to validate the JavaScript files.
 
 <details>
 <summary>JS Validation Screenshot</summary>
-<img src="documentation/cssvalidation.png" width="700">
+<img src="docs/" width="700">
 </details>
 
 
@@ -257,12 +256,12 @@ The Lighthouse feature on Google Devtools was used to assess accessibility and p
 
 <details>
 <summary>Welcome and Quiz Page</summary>
-<img src="documentation/indexlh.png" width="700">
+<img src="docs/indexlighthousetesting.png" width="700">
 </details>
 
 <details>
 <summary>End of Game Page</summary>
-<img src="documentation/aboutlh.png" width="700">
+<img src="docs/endgamelighthousetesting.png" width="700">
 </details>
 
 
