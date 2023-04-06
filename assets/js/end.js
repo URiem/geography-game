@@ -8,32 +8,38 @@ finalScoreUser.innerText = `Hi ${user}! Your final score was:` ;
 finalScore.innerText = `${mostRecentScore} @ ${userLevel} Level` ;
 console.log(user);
 
-if (userLevel == 'Easy' && mostRecentScore < 4) {
-    document.getElementById('final-message').innerText = "Start Exploring!! There is so much more to learn!";
-} else if (userLevel == 'Easy' && mostRecentScore < 8) {
-    document.getElementById('final-message').innerText = "Nice work! See if you can improve!";
-} else if (userLevel == 'Easy' && mostRecentScore <= 10) {
-    document.getElementById('final-message').innerText = "Excellent result at the easy level! Why not try the next level?";
-} else if (userLevel == 'Intermediate' && mostRecentScore < 4) {
-    document.getElementById('final-message').innerText = "Good progress!! Keep learning!";
-} else if (userLevel == 'Intermediate' && mostRecentScore < 8) {
-    document.getElementById('final-message').innerText = "Nice work! See if you can improve!";
-} else if (userLevel == 'Intermediate' && mostRecentScore <= 10) {
-    document.getElementById('final-message').innerText = "Excellent result at the intermediate level! Try the next level?";
-} else if (userLevel == 'Advanced' && mostRecentScore < 4) {
-    document.getElementById('final-message').innerText = "Good job!! Keep learning!";
-} else if (userLevel == 'Advanced' && mostRecentScore < 8) {
-    document.getElementById('final-message').innerText = "Check out a map! See if you can figure out the answers!";
-} else if (userLevel == 'Advanced' && mostRecentScore <= 10) {
-    document.getElementById('final-message').innerText = "Excellent result at the advanced level! Are you ready to be an expert?";
-} else if (userLevel == 'Expert' && mostRecentScore < 4) {
-    document.getElementById('final-message').innerText = "Good job!! Keep learning!";
-} else if (userLevel == 'Expert' && mostRecentScore < 8) {
-    document.getElementById('final-message').innerText = "Wow!! You probably love studying maps!!!";
-} else if (userLevel == 'Expert' && mostRecentScore <= 10) {
-    document.getElementById('final-message').innerText = "Amazing!! Do you know the capitals of the remaining 155 countries aswell?";
-} else {
-    document.getElementById('final-message').innerText = "Great work!";
+if (userLevel == 'Easy') {
+    if (mostRecentScore < 4) {
+        document.getElementById('final-message').innerText = "Start Exploring!! There is so much more to learn!";
+    } else if (mostRecentScore <= 8) {
+        document.getElementById('final-message').innerText = "Nice work! See if you can improve!";
+    } else {
+        document.getElementById('final-message').innerText = "Excellent result! Why not try the next level?";
+    }
+} else if (userLevel == 'Intermediate') {
+    if (mostRecentScore < 4) {
+        document.getElementById('final-message').innerText = "Good progress!! Keep learning!";
+    } else if (mostRecentScore <= 8) {
+        document.getElementById('final-message').innerText = "Nice work! See if you can improve!";
+    } else {
+        document.getElementById('final-message').innerText = "Excellent result! Why not try the next level?";
+    }
+} else if (userLevel == 'Advanced') {
+    if (mostRecentScore < 4) {
+        document.getElementById('final-message').innerText = "Good job!! Keep learning!";
+    } else if (mostRecentScore <= 8) {
+        document.getElementById('final-message').innerText = "Check out a map! See if you can figure out the answers!";
+    } else {
+        document.getElementById('final-message').innerText = "Excellent result! Are you ready to be an expert?";
+    }
+} else if (userLevel == 'Expert') {
+    if (mostRecentScore < 4) {
+        document.getElementById('final-message').innerText = "You are almost an expert!! Keep at it!";
+    } else if (mostRecentScore <= 8) {
+        document.getElementById('final-message').innerText = "Wow!! You probalby love studying maps!!";
+    } else {
+        document.getElementById('final-message').innerText = "Amazing!! Do you know the capitals of the remaining 155 countries aswell?";
+    }
 }
 
 const playagain = document.getElementById("play-again-btn");
