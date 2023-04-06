@@ -49,7 +49,7 @@
 
 ## Introduction
 
-The Geography Game is a multiple choice online quiz testing the users knowledge on the capital cities of the world. The user can choose between several levels of difficulty when playing the game. The user gets feedback on the number of questions in the ongoing quiz and the score.
+The Geography Quiz is a multiple choice online quiz testing the users knowledge on the capital cities of the world. The user can choose between several levels of difficulty when playing the game. The user gets feedback on the number of questions in the ongoing quiz and the score.
 
 ## Project Goals
 
@@ -99,7 +99,7 @@ As the site owner, I want users to ...
 
 #### Intial Stage
 
-At the initial stage the site will include a welcome section that displays the rules of the game and lets the user input a username, then the user is given a choice of four levels of difficulty of the game. Finally the game will start and run though 10 questions at the chosen level. An end of game page will then be shown where the user can opt to play the game again.
+At the initial stage the site will include a welcome section that displays the rules of the game and lets the user input a username, then the user is given a choice of four levels of difficulty of the game. Finally the game will start and run though 10 questions at the chosen level. An end of game page will then load, here the user can opt to play the game again.
 
 #### Future Additions
 
@@ -112,7 +112,7 @@ In addition, it would enhance the experience of the user to be able to save scor
 
 #### Wireframes
 
-The structure of the initial site will include three pages:
+The structure of the initial site will include three section incorporated in the index.html page:
 
 1. **Welcome Section** displays the rules of the game and asks the user to input a username in order to proceed to playing the game.
 
@@ -126,11 +126,11 @@ The structure of the initial site will include three pages:
 
 ![Quiz](docs/quizpagewireframe.png)
 
-3. **End of Game Page** which displays the users final score and level at which the game was played with a matching message. It gives and option to play the game again.
+3. **End of Game Page** which displays the users final score and level at which the game was played with a matching message. It gives and option to play the game again. This will be in a separate end_game.html file.
 
 ![End of Game](docs/endofgamewireframe.png)
 
-5. **404 Page** - a simple 404 Error page is also included.
+5. **404 Page** - a simple 404 Error page is also included (404.html)
 
 ### Skeleton
 
@@ -160,7 +160,7 @@ As described in the previous section with the aid of wireframes, the online game
 
 - Features the question displayed at the top of the central content area.
 - Four clickable text elements contain the multiple choice answers.
-- A score area below the answers updates the correct and wrong answer tally every time the user chooses and answer. It also keeps track of the current and total number of questions.
+- A score area below the answers updates the correct and wrong answer tally every time the user chooses an answer. It also keeps track of the current and total number of questions.
 
 #### End of Game page
 <details>
@@ -169,8 +169,9 @@ As described in the previous section with the aid of wireframes, the online game
 </details>
 
 - Features the score and level at which the game was played.
+- A message is posted on the page, depending on the score and level of play.
 - An image in the center of the page makes the display more eye catching and appealing.
-- Below the image a button allows the user to return to the welcome page and play again.
+- Below the image two clickable elements allow the user to play again either with the same username or by entering a new username.
 
 #### Footer
 <details>
@@ -190,11 +191,11 @@ To enhance the UX the user could be given an option on the final page to save th
 
 ### Surface
 
-The surface design of the website is aimed to convey an adventurous and global feel, while remaining uncluttered, and maintaining easy of readability. The backgroundimage of a world map was choosen with this aim in mind and the color schemes was choosen to match the image.
+The surface design of the website is aimed to convey an adventurous and global feel, while remaining uncluttered, and maintaining easy of readability. The background image of a world map was choosen with this aim in mind and the color scheme was choosen to match the image.
 
 #### Color Scheme
 
-The color scheme is a balance of earthy colors that that match the color scheme of the background image. On a desktop buttons and text elements change to colors from this palett when the user hovers over them. The footer background also matches the color scheme. The remaining features on the site and font are a balance of a dark grey or black, as well as white or off white in order to maintain contrast and readability.
+The color scheme is a balance of earthy colors that match the color scheme of the background image. On a desktop buttons and text elements change to colors from this palett when the user hovers over them. The footer background also matches the color scheme. The remaining features on the site and font are a balance of a dark grey or black, as well as white or off white in order to maintain contrast and readability.
 
 ![Color Scheme](docs/colorscheme.png)
 
@@ -223,8 +224,8 @@ Roboto Slab is the font used for high level headings in the game, the clickable 
 Several sites came in handy while developing the code to help with problem solving:
 
 - W3 Schools
-- stackoverflow.com
-- mdn web docs (https://developer.mozilla.org/)
+- <a href="https://stackoverflow.com">Stack Overflow</a>
+- <a href="https://developer.mozilla.org/">mdn web docs</a>
 
 ## Testing and Validation
 
@@ -254,9 +255,7 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 
 ### JavaScript Validation
 
-The JSHint (https://jshint.com/) was used to validate the JavaScript files. Small issues, such as missing semicolons, etc. were fixed. Unused variable warnings were ignored, as those variables or functions where called/used in either the html files or other JS files.
-
-
+The linter <a href="https://jshint.com/">JSHint</a> was used to validate the JavaScript files. Small issues, such as missing semicolons, etc. were fixed. Unused variable warnings were ignored, as those variables or functions where called/used in either the html files or other JS files.
 
 ### Accessibility & Performance
 
@@ -275,7 +274,7 @@ The Lighthouse feature on Google Devtools was used to assess accessibility and p
 
 #### Outstanding Issues
 
-
+There are currently no outstanding issues that the developer is aware of.
 
 ### Browser Compatability
 
@@ -308,20 +307,13 @@ The websites compatability was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| End of Game page | Click on the Play Again button | Links back to the welcome section and the game starts over | Works as expected |
-
+| End of Game page | Click on one of the Play Again button | Links back to the welcome section and the game starts over | Works as expected |
 
 4. As a returning user, I want to try a higher-level game.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Choose A Level | Choose level of game at which to play | Game will play at chosen level | Works as expected |
-
-4. As a returning user, I want to see my previous scores.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| End of Game Page | Enter username, click submit, and the score is saved | A page displays with saved scores | Not yet implemented |
 
 5. As a returning user, find out more about the game developer.
 
@@ -339,26 +331,17 @@ The websites compatability was tested on the following browsers:
 | Quiz Section | Click through the answers | New questions are continuously displayed | Works as expected |
 | End of Game Page | Choose to play again | Welcome page displays | Works as expected |
 
-7. As the site owner, I want users to return to the game in the future.
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|   |  |  |  | 
-
 
 #### Room for improvement on User Stories
 
-While all the minimum criteria for fullfilling the user stories are met, there are several items that could be improved upon:
-
-1. Links to share game on social media.
-2. Implement score saving mechanism.
+A feature that allows a returning user to save their score is still missing and could be implemented in the future to enhance the experience of users.
 
 ## Bugs & Fixes
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 | Username variable did not save/update correctly in Local Storage. In the html the username entered in the previous round of play displayed, as opposed to the new username entered in the current round of play. | The username was assigned to Local Storage inside the validation function as opposed to returned from the function and then assiged to Local Storage outside the function. This fixed the problem. |
-| On mobile displays the hover function for clickable text lead to glitches, which meant that clickable text would appear with highlighted background at inappropriate times. | Hover function was disabled on displays below a certain screen width. |
+| On mobile displays the hover function for clickable elements led to glitches, which meant that clickable text would appear with highlighted background at inappropriate times. | Hover function was disabled on displays below a certain screen width. |
 
 ## Deployment & Development
 
@@ -399,9 +382,10 @@ Images:
 
 Resources and inspiration came from a few sources:
 
-- Movie Quotes Quiz by Jose Maciel https://zemaciel.github.io/project-02/index.html - is where I got the idea for my quiz. I enjoyed much of the functionality and features of his game and took inspriration from it as I was developing my own.
+- Movie Quotes Quiz by Jose Maciel https://zemaciel.github.io/project-02/index.html - this was where I got the idea for my quiz. I enjoyed much of the functionality and features of his game and took inspriration from it as I was developing my own.
 - Code by Marek https://www.codehim.com/vanilla-javascript/javascript-multiple-choice-questions-code/ helped me to set up the core functionality of the quiz.
-- https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/
+- The following link gave me ideas how to validate user input https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/
+- The functionality for keeping track of the score was inspired by the Love Maths project.
 
 ### Acknowledgements
 
