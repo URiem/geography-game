@@ -34,10 +34,12 @@ h2 {
     margin-top: 0;
 }
 
+
 /* Styling of the central container for game content */
 
 .opaque {
     background-color: rgba(250, 249, 249, 0.8);
+    margin-bottom: 10px;
     padding: 1.5rem;
     border-radius: 0.5rem;
     text-align: center;
@@ -171,13 +173,19 @@ img {
     max-width: 350px;
 }
 
+#play-again-btn {
+    margin: 20px;
+    font-family: Lato, sans-serif;
+    font-size: 1.2rem;
+}
+
 /* Styling of the footer */
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: auto;
-    height: 75px;
+    height: 50px;
     width: 100%;
     background-color: #B6A48Dff;
 }
@@ -185,8 +193,8 @@ footer {
 footer a {
     color: whitesmoke;
     padding: 0.4rem;
-    margin: 0 5px 0 5px;
-    font-size: 1.7rem;
+    margin: 0 25px 0 25px;
+    font-size: 1.5rem;
 }
 
 /* Setting responsiveness of game at different screen width */
@@ -212,7 +220,12 @@ footer a {
     width: 90%;
 }
 
+#username-area input {
+   width: 80%;
+}
+
 img {
     width: 80%;
 }
+
 }

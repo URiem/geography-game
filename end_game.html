@@ -11,10 +11,13 @@
 </head>
 <body>
 
-    <h1>Geography Quiz</h1>
-    <h2>Test your geographic knowledge!</h2>
+    <header>
+        <h1 id="main-heading">Geography Quiz</h1>
+        <h2>Test your geographic knowledge!</h2>
+    </header>
 
-    <article class="opaque">   
+    <!-- <section> displaying the final score, an message, an image and two button to start the game over -->
+    <section class="opaque">   
         <div class="final-score-area">
             <h3><span id="final-score-user">0</span></h3>
             <h3><span id="final-score">0</span></h3>
@@ -23,14 +26,12 @@
         </div>
         
         <h3 class="play-again">Do you want to play again?</h3>
-        <a href="index.html" class="btn"><i class="fa-solid fa-rotate-left"></i> Play again</a>
-        <!-- <button type="submit" id="play-again-btn" class="btn"><i class="fa-solid fa-rotate-left"></i> Play again</button> -->
+        <a href="index.html" class="btn"><i class="fa-solid fa-rotate-left"></i> Play again as same user.</a>
+        <button type="submit" id="play-again-btn" class="btn"><i class="fa-solid fa-rotate-left"></i> Play again with new username.</button>
 
-    </article>
+    </section>
     
-    <!-- <script src="assets/js/questions.js"></script> -->
-    <script src="assets/js/end.js"></script>
-    
+    <!--<footer>-->
     <footer>
         <a href="https://github.com/URiem" target="_blank" rel="noopener" aria-label="Github page of developer (opens in new tab).">
             <i class="fa-brands fa-github"></i></a>
@@ -38,6 +39,7 @@
             <i class="fa-brands fa-linkedin-in"></i></a>
     </footer>
 
+    <script src="assets/js/end.js"></script>
 </body>
 
 </html>

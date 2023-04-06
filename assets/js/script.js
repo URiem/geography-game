@@ -1,41 +1,52 @@
 // Elements of code where taken from - Code by Marek https://www.codehim.com/vanilla-javascript/javascript-multiple-choice-questions-code/
 // Inpsiration and guidance for certain aspect of code were also obtained from the Code Institutes Love Maths game
 // and the Movie Quotes Quiz by Jose Maciel https://zemaciel.github.io/project-02/index.html
-// https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/
+// Validation of username was adapted from https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/
 
-const submit = document.getElementById("submit");
-
-submit.addEventListener('click', validate);
-
-/**
- * This function validates that a username was input. It shows an error message if not.
- * If a username is provided it saves it so it can be displayed throughout the game.
- * @param {event} e - event of a click
- */
-function validate(e) {
-    e.preventDefault();
-
-    const usernameField = document.getElementById("username");
-
-    if (!usernameField.value) {
-        const usernameError = document.getElementById("usernameError");
-        usernameError.classList.add("visible");
-        usernameError.setAttribute('aria-hidden', false);
-        usernameError.setAttribute('aria-invalid', true);
-        usernameError.innerText = "Please enter a username to proceed!";
-    }
-
-    if (usernameField.value) {
-        console.log(usernameField.value);
-        window.localStorage.setItem("username", usernameField.value);
-        document.getElementById("levelchoice-area").style.display = "initial";
-        document.getElementById("username-area").style.display = "none";
-        window.localStorage.setItem("username", usernameField.value);
-    }
-
+// If a user is loading the game for the first time, it will require input of a username.
+// The username is stored in localStorage.
+// If a user has already provided a username and wants to play again with the same username,
+// the user is not required to enter the username again.
+if (window.localStorage.getItem("username")) {
+ 
+    document.getElementById("levelchoice-area").style.display = "initial";
+    document.getElementById("username-area").style.display = "none";
     let user = window.localStorage.getItem("username");
     document.getElementById("levelchoice-heading").innerText = `Welcome to the game ${user}!`;
 
+} else if (!window.localStorage.getItem("username")) {
+   
+    const submit = document.getElementById("submit");
+    submit.addEventListener('click', validate);
+
+    /**
+     * This function validates that a username was input. It shows an error message if not.
+     * If a username is provided it saves it so it can be displayed throughout the game.
+     * Adapted from https://www.freecodecamp.org/news/form-validation-with-html5-and-javascript/
+     * @param {event} e - event of a click
+     */
+    function validate(e) {
+        e.preventDefault();
+
+        const usernameField = document.getElementById("username");
+
+        if (!usernameField.value) {
+            const usernameError = document.getElementById("usernameError");
+            usernameError.classList.add("visible");
+            usernameError.setAttribute('aria-hidden', false);
+            usernameError.setAttribute('aria-invalid', true);
+            usernameError.innerText = "Please enter a username to proceed!";
+        } else if (usernameField.value) {
+            window.localStorage.setItem("username", usernameField.value);
+            document.getElementById("levelchoice-area").style.display = "initial";
+            document.getElementById("username-area").style.display = "none";
+            window.localStorage.setItem("username", usernameField.value);
+        }
+
+        let user = window.localStorage.getItem("username");
+        document.getElementById("levelchoice-heading").innerText = `Welcome to the game ${user}!`;
+
+    }
 }
 
 let questionArea = document.getElementById('question-area');
@@ -62,12 +73,11 @@ function questionChoice(levelChoice,curr) {
         allQuestions = allQuestionsAdvanced;
     } else if (userChoice === 'Expert') {
         allQuestions = allQuestionsExpert;
-    } else {
-        alert('You have not made a choice!');
-    }
+    } 
 
      // Start the quiz
     loadQuestion(curr);
+
     document.getElementById("total-questions").textContent = allQuestions.length;
     document.getElementById("level").textContent = userChoice;
     document.getElementById("game-area").style.display = "initial";
@@ -80,6 +90,7 @@ function questionChoice(levelChoice,curr) {
 
 /**
  * This function loads the current question with answers into the game area
+ * Adapted from https://www.codehim.com/vanilla-javascript/javascript-multiple-choice-questions-code/
  * @param {number} curr - number variable of the current question 
  */
 function loadQuestion(curr) {
@@ -109,6 +120,7 @@ function loadQuestion(curr) {
  * is the same as the correct answer. Then it checks if that was the last question
  * in the question array. If it is not, then the next question will be loaded, 
  * if it is the last question, then it will give feedback to say the game is over.
+ * Adapted from https://www.codehim.com/vanilla-javascript/javascript-multiple-choice-questions-code/
  * @param {number} i - index of the answer clicked by the user
  * @param {array} arr - array of possible answers for the current question
  * @returns {function} 
@@ -141,6 +153,7 @@ function checkAnswer(i, arr) {
 
 /**
  * This function increments the correct score.
+ * Adapted from Love Maths project
  */
 function incrementScore() {
 
@@ -151,6 +164,7 @@ function incrementScore() {
     
 /**
  * This function increments the wrong answer counter
+ * Adapted from Love Maths project
  */
 function incrementWrongAnswer() {
 

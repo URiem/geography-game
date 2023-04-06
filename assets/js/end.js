@@ -36,47 +36,33 @@ if (userLevel == 'Easy' && mostRecentScore < 4) {
     document.getElementById('final-message').innerText = "Great work!";
 }
 
-// const playagain = document.getElementById("play-again-btn");
+const playagain = document.getElementById("play-again-btn");
 
-// playagain.addEventListener('click', returntostart);
+playagain.addEventListener('click', returntostart);
 
-// /**
-//  * This function validates that a username was input. It shows an error message if not.
-//  * If a username is provided it saves it so it can be displayed throughout the game.
-//  * @param {event} e - event of a click
-//  */
-// function returntostart(e) {
-//     e.preventDefault();
+/**
+ * This function validates that a username was input. It shows an error message if not.
+ * If a username is provided it saves it so it can be displayed throughout the game.
+ * @param {event} e - event of a click
+ */
+function returntostart(e) {
+    e.preventDefault();
+    localStorage.clear();
+    load(startOver);
+}
 
-//     user = window.localStorage.getItem("username");
 
-//     if (!user) {
-//         console.log('No username given');
-//         load(startOver);
-//     }
+/**
+ * This function delays the loading of myURL
+ * @param {string} myURL - URL is loaded with time delay 
+ */
+function load(myURL) {
+    setTimeout(myURL, 0);
+}
 
-//     if (user) {
-//         console.log(user);
-//         load(startOver);
-//         // window.localStorage.setItem("username", usernameField.value);
-//         document.getElementById("levelchoice-area").style.display = "initial";
-//         document.getElementById("username-area").style.display = "none";
-//         // window.localStorage.setItem("username", usernameField.value);
-        
-//     }
-// }
-
-// /**
-//  * This function delays the loading of myURL
-//  * @param {string} myURL - URL is loaded with time delay 
-//  */
-// function load(myURL) {
-//     setTimeout(myURL, 1000);
-// }
-
-// /**
-//  * This function loads the last page when the game is over
-//  */
-// function startOver () {
-//     window.location.assign('index.html');
-// }
+/**
+ * This function loads the last page when the game is over
+ */
+function startOver () {
+    window.location.assign('index.html');
+}

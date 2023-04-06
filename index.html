@@ -10,11 +10,12 @@
     <link rel="icon" type="image/x-icon" href="assets/images/ask-question.png">
 </head>
 <body>
-    <header>
-        <h1>Geography Quiz</h1>
+    
+   <header>
+        <h1 id="main-heading">Geography Quiz</h1>
         <h2>Test your geographic knowledge!</h2>
     </header>
-
+    <!-- </section> To input username and display rules -->
     <section id="username-area" class="opaque">
         <h3>Please enter a username to start the game!</h3>
         <form>
@@ -32,10 +33,10 @@
         </ul>
         <h3>Have Fun!!</h3>
     </section>
-
+    <!-- </section> To display the choice of game levels -->
     <section id="levelchoice-area" class="opaque">
         <h3 id="levelchoice-heading"></h3>
-        <h4>Choose your level:</h4>
+        <h3>Choose your level:</h3>
         <ul id='question-levels'>
             <li class='level' onClick='questionChoice(this,0)'>Easy</li>
             <li class='level' onClick='questionChoice(this,0)'>Intermediate</li>
@@ -43,7 +44,7 @@
             <li class='level' onClick='questionChoice(this,0)'>Expert</li>
         </ul>
     </section>
-    
+    <!-- </section> To display the quiz questions and score tracker -->
     <section class="opaque" id="game-area">
         <div id="quiz-area">
             <h3 id="question-area"></h3>
@@ -62,7 +63,7 @@
         </div>
     </section>
     
-    
+    <!-- </footer> With GitHub and LinkedIn links -->
     <footer>
         <a href="https://github.com/URiem" target="_blank" rel="noopener" aria-label="Github page of developer (opens in new tab).">
             <i class="fa-brands fa-github"></i></a>
@@ -72,7 +73,6 @@
 
     <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
-    <!-- <script src="assets/js/end.js"></script> -->
 
 </body>
 
