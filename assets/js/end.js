@@ -6,7 +6,6 @@ let user = window.localStorage.getItem("username");
 
 finalScoreUser.innerText = `Hi ${user}! Your final score was:` ;
 finalScore.innerText = `${mostRecentScore} @ ${userLevel} Level` ;
-console.log(user);
 
 if (userLevel == 'Easy') {
     if (mostRecentScore < 4) {
@@ -42,8 +41,10 @@ if (userLevel == 'Easy') {
     }
 }
 
-const playagain = document.getElementById("play-again-btn");
+const playAgainSameUser = document.getElementById("play-again-same-user");
+playAgainSameUser.innerHTML = `<i class="fa-solid fa-rotate-left"></i> Play again as ${user}` ;
 
+const playagain = document.getElementById("play-again-btn");
 playagain.addEventListener('click', returntostart);
 
 /**
@@ -56,7 +57,6 @@ function returntostart(e) {
     localStorage.clear();
     load(startOver);
 }
-
 
 /**
  * This function delays the loading of myURL

@@ -178,7 +178,7 @@ function incrementWrongAnswer() {
  * @param {string} myURL - URL is loaded with time delay 
  */
 function load(myURL) {
-    setTimeout(myURL, 3000);
+    setTimeout(myURL, 2000);
 }
 
 /**
