@@ -139,7 +139,7 @@ As described in the previous section with the aid of wireframes, the online game
 #### Welcome Section
 <details>
 <summary>Screenshot of Welcome Section</summary>
-<img src="docs/welcomesection.png" width="700">
+<img src="docs/welcomescrn.png" width="700">
 </details>
 
 - Features an input field. The user is required to enter a username to continue. A submit button initiates the next section if a username has been entered. The rules of the game are also diplayed.
@@ -147,7 +147,7 @@ As described in the previous section with the aid of wireframes, the online game
 #### Choose A Level Section
 <details>
 <summary>Screenshot of the Choose a Level Section</summary>
-<img src="docs/chooselevelsection.png" width="700">
+<img src="docs/chooselevelscrn.png" width="700">
 </details>
 
 - Features four clickable elements containing the choices of levels the user can opt for: Easy, Intermediate, Advanced, and Expert.
@@ -155,7 +155,7 @@ As described in the previous section with the aid of wireframes, the online game
 #### Quiz Section
 <details>
 <summary>Screenshot of Quiz Section</summary>
-<img src="docs/quizsection.png" width="700">
+<img src="docs/quizsectionscrn.png" width="700">
 </details>
 
 - Features the question displayed at the top of the central content area.
@@ -165,7 +165,7 @@ As described in the previous section with the aid of wireframes, the online game
 #### End of Game page
 <details>
 <summary>Screenshot of End of Game </summary>
-<img src="docs/endgamepage.png" width="700">
+<img src="docs/endofgamepage.png" width="700">
 </details>
 
 - Features the score and level at which the game was played.
@@ -223,7 +223,7 @@ Roboto Slab is the font used for high level headings in the game, the clickable 
 
 Several sites came in handy while developing the code to help with problem solving:
 
-- W3 Schools
+- <a href="https://www.w3schools.com/">W3 Schools</a>
 - <a href="https://stackoverflow.com">Stack Overflow</a>
 - <a href="https://developer.mozilla.org/">mdn web docs</a>
 
