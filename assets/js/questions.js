@@ -14,7 +14,7 @@ const allQuestionsEasy = [
     },
     {
       question: 'What is the capital of Norway?',
-      answers: ['Bergen', 'Tromso' , 'Trondheim', 'Oslo', 3]
+      answers: ['Bergen', 'Stavanger' , 'Trondheim', 'Oslo', 3]
     },
     {
       question: 'What is the capital of Italy?',

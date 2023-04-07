@@ -231,16 +231,21 @@ Several sites came in handy while developing the code to help with problem solvi
 
 ### HTML Validation
 
-The W3C Markup Validation Service was used to validate the HTML of the website. All pages passed with no errors. Warnings regarding empty headings can be ignored as the text content for the headings is provided by JavaScript as the game progesses.
+The W3C Markup Validation Service was used to validate the HTML of the website. All pages passed with no errors or warnings. 
 
 <details>
 <summary>Welcome and Quiz Page</summary>
-<img src="docs/indexhtmltesting.png" width="700">
+<img src="docs/indexhtmlvalidation.png" width="700">
 </details>
 
 <details>
 <summary>End of Game Page</summary>
-<img src="docs/endgamehtmltesting.png" width="700">
+<img src="docs/endgamehtmlvalidation.png" width="700">
+</details>
+
+<details>
+<summary>404 Error Page</summary>
+<img src="docs/404htmlvalidation.png" width="700">
 </details>
 
 
@@ -255,7 +260,27 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 
 ### JavaScript Validation
 
-The linter <a href="https://jshint.com/">JSHint</a> was used to validate the JavaScript files. Small issues, such as missing semicolons, etc. were fixed. Unused variable warnings were ignored, as those variables or functions where called/used in either the html files or other JS files.
+The linter <a href="https://jshint.com/">JSHint</a> was used to validate the JavaScript files. Small issues, such as missing semicolons, etc. were fixed. Unused variable warnings were ignored, as those variables or functions where called/used in either the html files or other JS files. All remaining warnings stem from the JShint configuration and are not related to the code.
+
+<details>
+<summary>script.js validation part one</summary>
+<img src="docs/jshintscripttop.png" width="700">
+</details>
+
+<details>
+<summary>script.js validation part two</summary>
+<img src="docs/jshintscripttop.png" width="700">
+</details>
+
+<details>
+<summary>end.js validation</summary>
+<img src="docs/jshintend.png" width="700">
+</details>
+
+<details>
+<summary>questions.js validation</summary></summary>
+<img src="docs/jshintquestions.png" width="700">
+</details>
 
 ### Accessibility & Performance
 
