@@ -167,7 +167,7 @@ const allQuestionsAdvanced = [
     },
     {
       question: 'What is the capital of Papa New Guinea?',
-      answers: ['lea', 'Popondetta' , 'Madang', 'Port Moresby', 3]
+      answers: ['Lea', 'Popondetta' , 'Madang', 'Port Moresby', 3]
     }
   ];
   
