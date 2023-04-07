@@ -203,14 +203,17 @@ footer a {
 
     #levelchoice-area li:hover{
         background-color: #B6A48Dff;
+        cursor: pointer;
     }
 
     #quiz-area li:hover {
         background-color: #B6A48Dff;
+        cursor: pointer;
     }
         
     .btn:hover {
         background-color: #B6A48Dff;
+        cursor: pointer;
     }
 }
 
