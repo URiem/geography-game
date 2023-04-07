@@ -95,7 +95,6 @@ As a returning user, I want to ...
 ##### Site owner
 As the site owner, I want users to ...
 1. ... interact with the game, stay engaged and enjoy the challenge.
-2. ... return to the game in the future.
 
 ### Scope
 
