@@ -136,7 +136,24 @@ The structure of the initial site will include three section incorporated in the
 
 As described in the previous section with the aid of wireframes, the online game site includes four interactive sections, which all have a heading, a central display area and a footer. The welcome section requires the user to input a username to continue to the game. The user is then prompted to choose the level at which they would like to play the game, upon choosing a level the game loads and runs, adding to the score of correct or wrong answers as the answers are chosen. At the end of the game a page displaying the final score is displayed.
 
+### Surface
+
+The surface design of the website is aimed to convey an adventurous and global feel, while remaining uncluttered, and maintaining easy of readability. The background image of a world map was choosen with this aim in mind and the color scheme was choosen to match the image.
+
+#### Color Scheme
+
+The color scheme is a balance of earthy colors that match the color scheme of the background image. On a desktop buttons and text elements change to colors from this palett when the user hovers over them. The footer background also matches the color scheme. The remaining features on the site and font are a balance of a dark grey or black, as well as white or off white in order to maintain contrast and readability.
+
+![Color Scheme](docs/colorscheme.png)
+
+#### Font
+
+Roboto Slab is the font used for high level headings in the game, the clickable text of level choices and answers as well as the score counter ar in a matching Lato font. 
+
+### Features
+
 #### Welcome Section
+
 <details>
 <summary>Screenshot of Welcome Section</summary>
 <img src="docs/welcomescrn.png" width="700">
@@ -161,6 +178,7 @@ As described in the previous section with the aid of wireframes, the online game
 - Features the question displayed at the top of the central content area.
 - Four clickable text elements contain the multiple choice answers.
 - A score area below the answers updates the correct and wrong answer tally every time the user chooses an answer. It also keeps track of the current and total number of questions.
+- Feedback to the user includes the change of background color of the answer the user hovers over and the cursor changing to a pointer (these features is disabled on smaller screens).
 
 #### End of Game page
 <details>
@@ -169,9 +187,18 @@ As described in the previous section with the aid of wireframes, the online game
 </details>
 
 - Features the score and level at which the game was played.
-- A message is posted on the page, depending on the score and level of play.
+- A personalized message is posted on the page, depending on the score and level of play.
 - An image in the center of the page makes the display more eye catching and appealing.
 - Below the image two clickable elements allow the user to play again either with the same username or by entering a new username.
+
+#### Header
+<details>
+<summary>Screenshot of Header</summary>
+<img src="docs/header.png" width="500">
+</details>
+
+- The header remains on display at the top of the game throughout a users journey through the game.
+- It tells the user clearly what the content and purpose of the application is.
 
 #### Footer
 <details>
@@ -187,21 +214,6 @@ As described in the previous section with the aid of wireframes, the online game
 #### Future Additions
 
 To enhance the UX the user could be given an option on the final page to save their scores. Another page or section could then appear that would display past scores of the user.
-
-
-### Surface
-
-The surface design of the website is aimed to convey an adventurous and global feel, while remaining uncluttered, and maintaining easy of readability. The background image of a world map was choosen with this aim in mind and the color scheme was choosen to match the image.
-
-#### Color Scheme
-
-The color scheme is a balance of earthy colors that match the color scheme of the background image. On a desktop buttons and text elements change to colors from this palett when the user hovers over them. The footer background also matches the color scheme. The remaining features on the site and font are a balance of a dark grey or black, as well as white or off white in order to maintain contrast and readability.
-
-![Color Scheme](docs/colorscheme.png)
-
-#### Font
-
-Roboto Slab is the font used for high level headings in the game, the clickable text of level choices and answers as well as the score counter ar in a matching Lato font. 
 
 ## Technologies Used
 
