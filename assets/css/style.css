@@ -201,31 +201,31 @@ footer a {
 
 @media screen and (min-width: 1000px) {
 
-#levelchoice-area li:hover{
-    background-color: #B6A48Dff;
-}
+    #levelchoice-area li:hover{
+        background-color: #B6A48Dff;
+    }
 
-#quiz-area li:hover {
-    background-color: #B6A48Dff;
-}
-    
-.btn:hover {
-    background-color: #B6A48Dff;
-}
+    #quiz-area li:hover {
+        background-color: #B6A48Dff;
+    }
+        
+    .btn:hover {
+        background-color: #B6A48Dff;
+    }
 }
 
 @media screen and (max-width: 450px) {
 
-.opaque {
-    width: 90%;
-}
+    .opaque {
+        width: 90%;
+    }
 
-#username-area input {
-   width: 80%;
-}
-
-img {
+    #username-area input {
     width: 80%;
-}
+    }
+
+    img {
+        width: 80%;
+    }
 
 }
