@@ -37,8 +37,8 @@ const allQuestionsEasy = [
       answers: ['Moskow', 'Saint Petersburg' , 'Vladivostok', 'Kazan', 0]
     },
     {
-      question: 'What is the capital of New Zealand?',
-      answers: ['Christchurch', 'Auckland' , 'Wellington', 'Hobbiton', 2]
+      question: 'What is the capital of Spain?',
+      answers: ['Bilbao', 'Madrid' , 'Barcelona', 'Valencia', 1]
     }
   ];
 
@@ -56,8 +56,8 @@ const allQuestionsEasy = [
       answers: ['New Delhi', 'Mumbai', 'Bangalore', 'Jaipur', 0]
     },
     {
-      question: 'What is the capital of Spain?',
-      answers: ['Bilbao', 'Madrid' , 'Barcelona', 'Valencia', 1]
+      question: 'What is the capital of New Zealand?',
+      answers: ['Christchurch', 'Auckland' , 'Wellington', 'Hobbiton', 2]
     },
     {
       question: 'What is the capital of Peru?',
