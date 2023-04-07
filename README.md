@@ -283,7 +283,7 @@ The linter <a href="https://jshint.com/">JSHint</a> was used to validate the Jav
 
 <details>
 <summary>script.js validation part two</summary>
-<img src="docs/jshintscripttop.png" width="700">
+<img src="docs/jshintscriptbottom.png" width="700">
 </details>
 
 <details>
